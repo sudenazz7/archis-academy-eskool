@@ -1,2 +1,2 @@
-# arshis-academy-eskool
+# archis-academy-eskool
 Eskool Solo Project
