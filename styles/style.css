@@ -1,2 +1,76 @@
 @import "styles/variables.css";
 @import "styles/reset.css";
+
+/* Header Section Start */
+.header-section{
+    background-color: #282828;
+    width: 100%;
+    padding: 50px 20px;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    width: var(--max-width);
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #F9F9F9;
+    font-size: 20px;
+}
+.nav-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-left: auto ;
+}
+.eskool-logo{
+    width: 365px;
+    height: 40px;
+}
+.nav-list{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.nav-item{
+    position: relative;
+    list-style-type: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-link{
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: var(--font-l);
+    font-weight: var(--regular);
+    line-height: 30px;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: opacity 0.2s ease 0.2s;
+}
+.nav-item.active , .nav-link:hover{
+    opacity: 1;
+}
+.nav-item img{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+.nav-item.active::after, .nav-item:hover::after{
+    opacity: 1;
+}
+.contact-button{
+    font-family: var(--secondary-font);
+    font-weight: var(--regular);
+    font-size: var(--font-xl);
+    color: var(--white);
+    border: 1px solid #fe6839;;
+    border-radius: 50px;
+    padding: 20px 30px;
+    background: transparent;
+    line-height: 30px;
+    cursor: pointer;
+    transition:0.3s ease;
+    margin-left: 30px;
+}
+/* Header Section End */
