@@ -13,7 +13,7 @@ body, html {
     width: 100%;
     overflow: hidden;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 .header-container{
     display: flex;
@@ -30,8 +30,8 @@ body, html {
 }
 .nav-container{
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: flex-end;
+    gap: 30px;
     margin-left: auto ;
 }
 .eskool-logo{
@@ -84,6 +84,100 @@ body, html {
     cursor: pointer;
     transition:0.3s ease;
     margin-left: 30px;
+    flex-wrap: nowrap;
 }
 
+.mobile-menu-button{
+    display: none;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: var(--font-xxl);
+    font-weight: var(--regular);
+    line-height: normal;
+    cursor: pointer;
+    transition: all 2.0s ease 2.0s ;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+}
+.mobile-menu-button:hover{
+    color: var(--orange);
+    transform: scale(1.2);
+}
+@media screen and (max-width: 1440px) {
+    .header-section{
+        padding: 40px 10px;
+    }
+    .eskool-logo{
+        width: 300px;
+    }
+    .nav-container, .nav-list{
+        gap: 50px;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+    .nav-link , .contact-button{
+        font-size: var(--font-l);
+    }
+    .nav-item::after{
+        width: 10px;
+        height: 10px;
+        left: -20px;
+    }
+    .contact-button{
+        margin-right: 70px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header-section{
+        padding: 20px 0px;
+    }
+    .eskool-logo{
+        padding: 20px 10px;
+        width: 200px;
+    }
+    .nav-container, .nav-list{
+        max-width: 100%;
+        padding-right: 20px;
+        font-size: var(--font-m);
+    }
+    .nav-item::after{
+        width: 8px;
+        height: 8px;
+        left: -30px;
+    }
+    .contact-button{
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+}
+@media  screen and (max-width: 850px) {
+    .header{
+        padding: 20px;
+    }
+    .eskool-logo{
+        width: 150px;
+    }
+    .nav-container{
+        display: none;
+    }
+    .nav-list{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .mobile-menu-button{
+        display: block;
+        position: absolute;
+        right: 20px;
+        font-size: var(--font-xl);
+        padding: 15px;
+    }
+    .contact-button{
+        display: none;
+        margin-left: 10px;
+        font-size: var(--font-m);
+    }
+}
 /* Header Section End */
