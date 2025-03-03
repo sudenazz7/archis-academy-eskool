@@ -14,6 +14,7 @@ body, html {
     overflow: hidden;
     margin: 0;
     padding: 10px;
+    height: 98px;
 }
 .header-container{
     display: flex;
@@ -26,7 +27,6 @@ body, html {
     max-width: 1440px;
     padding: 2mm;
     width: 100%;
-    height: 98px;
 }
 .nav-container{
     display: flex;
@@ -91,8 +91,10 @@ body, html {
     display: none;
     color: var(--white);
     font-family: var(--primary-font);
-    font-size: var(--font-xxl);
+    font-size: var(--font-heading-large);
     font-weight: var(--regular);
+    font-style: normal;
+    font-optical-sizing: auto;
     line-height: normal;
     cursor: pointer;
     transition: all 2.0s ease 2.0s ;
@@ -106,7 +108,7 @@ body, html {
 }
 @media screen and (max-width: 1440px) {
     .header-section{
-        padding: 40px 10px;
+        height: 98px;
     }
     .eskool-logo{
         width: 300px;
@@ -130,11 +132,11 @@ body, html {
 }
 @media screen and (max-width: 1046px) {
     .header-section{
-        padding: 20px 0px;
+        height: 88px;
     }
     .eskool-logo{
         padding: 20px 10px;
-        width: 200px;
+        width: 250px;
     }
     .nav-container, .nav-list{
         max-width: 100%;
@@ -152,15 +154,16 @@ body, html {
     }
 
 }
-@media  screen and (max-width: 895px) {
-    .header{
-        padding: 20px;
-    }
-    .eskool-logo{
-        width: 150px;
+@media  screen and (max-width: 946px) {
+    .header-section{
+        height: 78px;
     }
     .nav-container{
         display: none;
+    }
+    .eskool-logo{
+        padding: 20px 10px;
+        width: 200px;
     }
     .nav-list{
         display: flex;
@@ -171,7 +174,7 @@ body, html {
         display: block;
         position: absolute;
         right: 20px;
-        font-size: var(--font-xl);
+        font-size: var(--font-heading-large);
         padding: 15px;
     }
     .contact-button{
