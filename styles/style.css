@@ -1,2 +1,187 @@
 @import "styles/variables.css";
 @import "styles/reset.css";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Header Section Start */
+.header-section{
+    background-color: #282828;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+    height: 98px;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    width: var(--max-width);
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #F9F9F9;
+    font-size: 20px;
+    max-width: 1440px;
+    padding: 2mm;
+    width: 100%;
+}
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-left: auto ;
+}
+.eskool-logo{
+    width: 365px;
+    height: 40px;
+}
+.nav-list{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+.nav-item{
+    position: relative;
+    list-style-type: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-link{
+    color: var(--white);
+    font-family: var(--secondary-font);
+    font-size: var(--font-l);
+    font-weight: var(--regular);
+    line-height: 30px;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: opacity 0.2s ease 0.2s;
+}
+.nav-item.active , .nav-link:hover{
+    opacity: 1;
+}
+.nav-item img{
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+.nav-item.active::after, .nav-item:hover::after{
+    opacity: 1;
+}
+.contact-button{
+    font-family: var(--secondary-font);
+    font-weight: var(--regular);
+    font-size: var(--font-xl);
+    color: var(--white);
+    border: 1px solid #fe6839;;
+    border-radius: 50px;
+    padding: 20px 30px;
+    background: transparent;
+    line-height: 30px;
+    cursor: pointer;
+    transition:0.3s ease;
+    margin-left: 30px;
+    flex-wrap: nowrap;
+}
+
+.mobile-menu-button{
+    display: none;
+    color: var(--white);
+    font-family: var(--primary-font);
+    font-size: var(--font-heading-large);
+    font-weight: var(--regular);
+    font-style: normal;
+    font-optical-sizing: auto;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 2.0s ease 2.0s ;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 10;
+}
+.mobile-menu-button:hover{
+    color: var(--orange);
+    transform: scale(1.2);
+}
+@media screen and (max-width: 1440px) {
+    .header-section{
+        height: 98px;
+    }
+    .eskool-logo{
+        width: 300px;
+    }
+    .nav-container, .nav-list{
+        gap: 50px;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+    .nav-link , .contact-button{
+        font-size: var(--font-l);
+    }
+    .nav-item::after{
+        width: 10px;
+        height: 10px;
+        left: -20px;
+    }
+    .contact-button{
+        margin-right: 70px;
+    }
+}
+@media screen and (max-width: 1046px) {
+    .header-section{
+        height: 88px;
+    }
+    .eskool-logo{
+        padding: 20px 10px;
+        width: 250px;
+    }
+    .nav-container, .nav-list{
+        max-width: 100%;
+        padding-right: 20px;
+        font-size: var(--font-m);
+    }
+    .nav-item::after{
+        width: 8px;
+        height: 8px;
+        left: -30px;
+    }
+    .contact-button{
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+}
+@media  screen and (max-width: 946px) {
+    .header-section{
+        height: 78px;
+        gap: 10px;
+    }
+    .nav-container{
+        display: none;
+    }
+    .eskool-logo{
+        padding: 20px 10px;
+        width: 200px;
+    }
+    .nav-list{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .mobile-menu-button{
+        display: block;
+        position: absolute;
+        right: 20px;
+        font-size: var(--font-heading-large);
+        padding: 15px;
+    }
+    .contact-button{
+        display: none;
+        margin-left: 10px;
+        font-size: var(--font-m);
+    }
+}
+/* Header Section End */
