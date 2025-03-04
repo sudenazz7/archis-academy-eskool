@@ -157,6 +157,7 @@ body, html {
 @media  screen and (max-width: 946px) {
     .header-section{
         height: 78px;
+        gap: 10px;
     }
     .nav-container{
         display: none;
