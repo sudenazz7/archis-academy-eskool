@@ -185,3 +185,133 @@ body, html {
     }
 }
 /* Header Section End */
+
+/*Hero Section Start*/
+
+.hero-section{
+    background-color: #282828;
+    width: 100%;
+    min-height: 800px;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px 20px 20px 0;
+    z-index: 0;
+}
+.hero-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+.hero-img{
+    width: 100%;
+    margin-left: -50px;
+    z-index: 9;
+}
+.hero-section-images{
+    position: relative;
+}
+.hero-blur-rectangle{
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+    left: 0;
+    width: 200px;
+}
+.hero-blur-circle{
+    position: absolute;
+    z-index: -1;
+    bottom: -75px;
+    right: -75px;
+    width: 150px;
+}
+.hero-container-left{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-img{
+    width: 100%;
+    margin-left: -50px;
+    position: relative;
+    z-index: 9;
+}
+.hero-container-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.hero-title{
+    color: white;
+    font-family: var(--primary-font);
+    font-size: 50px;
+    font-weight: var(--semi-bold);
+    line-height: normal;
+    width: 500px;
+    margin-bottom: 10px;
+}
+.hero-title .highlight{
+    color: #fe6839;
+}
+.hero-text{
+    color: white;
+    font-family: var(--secondary-font);
+    font-size: var(--font-l);
+    font-weight: var(--regular);
+    line-height: 30px;
+    max-width: 45%;
+
+}
+.hero-button{
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+    border: 1px solid #fe6839;;
+    border-radius: 50px;
+    padding: 15px;
+    background: transparent;
+    line-height: 20px;
+    cursor: pointer;
+    transition:0.3s ease;
+    flex-wrap: nowrap;
+    width: 150px;
+}
+.hero-blur-curved{
+    position: absolute;
+    z-index: -1;
+    bottom: 50px;
+    right: 30px;
+    width: 180px;
+}
+.hero-dot-pattern{
+    position: absolute;
+    z-index: -1;
+    bottom: 30px;
+    right: 50px;
+    width: 350px;
+}
+.hero-line-1{
+    position: absolute;
+    z-index: -1;
+    width: 220px;
+}
+.hero-line-2{
+    position: absolute;
+    z-index: -1;
+    width: 220px;
+    left: 30%;
+    top: 150px;
+}
+.hero-line-3{
+    position: absolute;
+    z-index: -1;
+    width: 280px;
+    bottom: 20px;
+    right: 20px;
+}
