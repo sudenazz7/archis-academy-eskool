@@ -1,7 +1,12 @@
 :root{
     --primary-font : "Syne" , sans-serif;
+<<<<<<< HEAD:styles/global/variable.css
     --secondary-font: "Poppins", sans-serif;
 
+=======
+    --secondary-font: "Poppins , sans-serif";
+    
+>>>>>>> main:styles/variable.css
     /* Colors */
     --orange: #fe6839;
     --main-black: #282828;
