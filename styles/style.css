@@ -1,12 +1,6 @@
-@import "styles/variables.css";
-@import "styles/reset.css";
+@import "./global/variables.css";
+@import "./global/reset.css";
 
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-}
 /* Header Section Start */
 .header-section{
     background-color: #282828;
@@ -15,6 +9,7 @@ body, html {
     margin: 0;
     padding: 10px;
     height: 98px;
+    z-index: -2;
 }
 .header-container{
     display: flex;
@@ -76,7 +71,7 @@ body, html {
     font-weight: var(--regular);
     font-size: var(--font-xl);
     color: var(--white);
-    border: 1px solid #fe6839;;
+    border: 1px solid #fe6839;
     border-radius: 50px;
     padding: 20px 30px;
     background: transparent;
@@ -102,6 +97,7 @@ body, html {
     position: relative;
     z-index: 10;
 }
+
 .mobile-menu-button:hover{
     color: var(--orange);
     transform: scale(1.2);
@@ -219,16 +215,19 @@ body, html {
 .hero-blur-rectangle{
     position: absolute;
     z-index: -1;
-    top: 80px;
-    left: 0;
-    width: 200px;
+    border-radius: 10px;
+    height: 500px;
+    top: -500px;
+    width: 300px;
 }
 .hero-blur-circle{
     position: absolute;
-    z-index: -1;
-    bottom: -75px;
-    right: -75px;
-    width: 150px;
+    z-index: 0;
+    height: 550px;
+    width: 220px;
+    filter: blur(10%);
+    left: 850px;
+
 }
 .hero-container-left{
     display: flex;
@@ -284,34 +283,39 @@ body, html {
 }
 .hero-blur-curved{
     position: absolute;
-    z-index: -1;
-    bottom: 50px;
-    right: 30px;
-    width: 180px;
+    z-index: 1;
+    bottom: -50px;
+    right: -30px;
+    width: 300px;
+    filter: blur(10%);
+
 }
 .hero-dot-pattern{
     position: absolute;
-    z-index: -1;
-    bottom: 30px;
-    right: 50px;
-    width: 350px;
+    z-index: 1;
+    bottom: -50px;
+    right: -30px;
+    width: 40%;
 }
 .hero-line-1{
     position: absolute;
-    z-index: -1;
-    width: 220px;
+    z-index: -2;
+    width: 200px;
+    bottom: 0;
 }
 .hero-line-2{
     position: absolute;
     z-index: -1;
-    width: 220px;
-    left: 30%;
-    top: 150px;
+    width: 17%;
+    bottom: 15px;
+    left: 180px;
 }
 .hero-line-3{
     position: absolute;
-    z-index: -1;
-    width: 280px;
-    bottom: 20px;
-    right: 20px;
+    z-index: 0;
+    width: 500px;
+    bottom: 5px;
+    right: 10px;
 }
+
+
