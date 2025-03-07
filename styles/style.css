@@ -9,7 +9,10 @@
     margin: 0;
     padding: 10px;
     height: 98px;
-    z-index: -2;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .header-container{
     display: flex;
