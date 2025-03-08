@@ -306,3 +306,60 @@
             width: 80%;
         }
     }
+    /* Brand Banner Start */
+    .brand-banner{
+        background-color: #fe6839; 
+        width: 100%;
+        height: 250px;
+        padding: 70px 120px;
+    }
+    
+    .brand-banner-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        position: relative;
+        gap: 180px;
+    }
+    
+    .brand-banner-container h2{
+        color: #f9f9f9;
+        font-family: "Syne" , sans-serif;
+        font-weight: 600;
+        font-size: 45px;
+    }
+    .brand-banner-title{
+        height: 110px;
+        width: 800px;
+    }
+    
+    .brand-banner-container::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 5px;
+        width: 200px;
+        height: 2px;
+        background-color: #f9f9f9;
+    }
+    .brand-banner-btn{
+        font-size: 20px;
+        font-family: "Poppins" , sans-serif;
+        font-weight: 600;
+        color: #F9F9F9;
+        border: 1px solid #F9F9F9;;
+        background: none;
+        padding: 0 25px;
+        border-radius: 50px;
+        gap: 10px;
+        height: 70px;
+    }
+    .brand-banner-btn::after {
+        content: "→";
+        margin-left: 10px;
+        display: inline-block;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    /* Brand Banner End */
+    
