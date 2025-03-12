@@ -607,7 +607,7 @@
         }
         .header-content , .about-cta-btn{
             width: 100%;
-            padding: 4px 8px;
+            padding: 20px 8px;
             font-size: var(--font-s);
             justify-content: center;
         }
