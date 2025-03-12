@@ -681,9 +681,14 @@
             height: 450px;
         }
         .about-card:first-child {
-            background-position: right -20px top 45px;
+            background-position: right -30px top 45px;
             background-size: 50px auto;
            }
+    }
+    @media (max-width: 576px ){
+        .card-title{
+            font-size:var(--font-xxl);
+        }
     }
 
 
