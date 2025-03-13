@@ -306,3 +306,128 @@
             width: 80%;
         }
     }
+
+    /*What We Do Section Start*/
+    .what-we-do-section{
+        max-width: 1920px;
+        width: 100%;
+        margin-inline: auto;
+        background-color: var(--off-white);
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 150px;
+    }
+    .what-we-do-section  .text-content{
+        display: flex;
+        /*align-items: start;*/
+        justify-content: center;
+       /*width: 100%;*/
+        gap: 150px;
+
+    }
+    .what-we-do-section .wds-chip-text{
+        gap: 20px;
+        font-family: var(--secondary-font);
+        font-weight: var(--medium);
+        color:  #8D8D8D;
+    }
+    .wds-chip-icon::before {
+        content: "◆";
+        color:  #8D8D8D;
+        font-size: 20px;
+        margin-right: 8px;
+        display: inline-block;
+    }
+
+    .what-we-do-section  .features{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+    .what-we-do-section  .wds-title{
+        font-family: var(--primary-font);
+        font-size: var(--font-section-title);
+        font-weight: var(--thick);
+        /*width: 100%;*/
+        width: 600px;
+    }
+    .what-we-do-section  .feature-list{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .what-we-do-section .list-item{
+        list-style: none;
+        font-family: var(--secondary-font);
+        display: flex;
+        gap: 38px;
+        width: 530px;
+    }
+
+    .what-we-do-section .number{
+        color: var(--light-gray);
+        font-size: var(--font-xxxl);
+        font-weight: var(--medium);
+        width: 30px;
+    }
+    .what-we-do-section .feature{
+        color: var(--main-black);
+        font-size: var(--font-l);
+    }
+    .what-we-do-section .wds-button{
+        width: 200px;
+        padding: 20px;
+        border-radius: 50px;
+        border: 1px solid var(--main-black);
+        font-family: var(--secondary-font);
+        font-size:  var(--font-xl);
+        font-weight:  var(--medium);
+        background: none;
+    }
+    .what-we-do-section .wds-image-wrapper{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 800px;
+        width: 100%;
+    }
+    .what-we-do-section .cover{
+        position: absolute;
+        width: 100%;
+        height: 200px;
+        border-radius: 30px 30px 0 0;
+        backdrop-filter: blur(20px);
+        box-shadow: 
+                    -3.866px -3.866px 7.731px 0px rgba(0, 0, 0, 0.1) inset ,
+                    3.866px 3.866px 7.731px 0px rgba(255, 255, 255, 0.2) inset;
+        left: 0;
+        bottom: 0;
+        background-image: url("/assets/what-we-do-section/what-we-do-section-dot-pattern.svg"); 
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .what-we-do-section .description{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: var(--white);
+    }
+    .what-we-do-section .quote{
+        width: 680px;
+        font-family: var(--primary-font);
+        font-weight: var(--thick);
+        font-size: 40px;
+    }
+    .what-we-do-section .date{
+        font-family: var(--secondary-font);
+        font-size: var(--font-xxl);
+        font-weight: var(--regular);
+    }
+
+    /*What We Do Section End*/
