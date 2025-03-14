@@ -686,8 +686,14 @@
            }
     }
     @media (max-width: 576px ){
+        .about-header-title{
+            font-size: var(--font-xxxl);
+        }
         .card-title{
-            font-size:var(--font-xxl);
+            font-size:var(--font-xxxl);
+        }
+        .about-cta-btn{
+            height: 40px;
         }
     }
 
