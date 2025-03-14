@@ -430,4 +430,115 @@
         font-weight: var(--regular);
     }
 
+    @media (max-width: 1440px){
+        .what-we-do-section .text-content{
+            padding-left: 80px;
+        }
+        .what-we-do-section .feature{
+            font-size: var(--font-m);
+        }
+        .what-we-do-section .features{
+            gap: 30px;
+        }
+        .what-we-do-section .feature-list{
+            gap: 20px;
+        }
+    }
+    @media (max-width: 1200px) {
+        .text-content{
+            flex-direction: column;
+            padding-left: 50px;
+        }
+        .what-we-do-section .features{
+            gap: 20px;
+        }
+        .wds-chip-text, .feature{
+            font-size: var(--font-s);
+        }
+        .wds-title{
+            font-size: var(--font-xxl);
+        }
+        .what-we-do-section .number{
+            font-size: var(--font-l);
+        }
+        .what-we-do-section .quote{
+            font-size: var(--font-xl);
+        }
+        .what-we-do-section .date{
+            font-size: var(--font-m);
+        }
+        .what-we-do-section .feature-list ,
+        .what-we-do-section .list-item {
+            gap: 10px;
+        }
+    }
+
+    @media (max-width: 992px){
+        .wds-chip-text{
+            font-size: var(--font-xs);
+        }
+        .what-we-do-section{
+            flex-direction: column;
+            padding: 20px;
+        }
+        .what-we-do-section .features{
+            gap: 10px;
+        }
+        .wds-title{
+            font-size: var(--font-xl);
+        }
+        .what-we-do-section .feature-list{
+            gap: 10px;
+        }
+        .what-we-do-section .list-item{
+            gap: 10px;
+        }
+        .what-we-do-section .number{
+            font-size: var(--font-m);
+        }
+        .what-we-do-section .feature{
+            font-size: var(--font-xs);
+        }
+        .wds-button{
+            height: 30px;
+        }
+        .what-we-do-section .cover{
+            border-radius: 20px 20px 0 0;
+        }
+        .what-we-do-section .quote{
+            font-size: var(--font-m);
+        }
+        .what-we-do-section .date{
+            font-size: var(--font-s);
+        }
+    }
+    @media (max-width: 768px) {
+        .what-we-do-section{
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+        }
+        .wds-image-wrapper{
+            max-width: 100%;
+        }
+    }
+    @media (max-width: 576px) {
+        .what-we-do-section .number{
+            font-size: var(--font-m);
+            width: 20px;
+        }
+        .what-we-do-section .cover{
+            border-radius: 10px 10px 0 0;
+        }
+        .what-we-do-section .quote{
+            font-size: var(--font-s);
+        }
+        .what-we-do-section .date{
+            font-size: var(--font-xs);
+        }
+        .wds-button{
+            width: 100%;
+        }
+    }
+
     /*What We Do Section End*/
