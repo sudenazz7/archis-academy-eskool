@@ -309,22 +309,24 @@
 
     /*What We Do Section Start*/
     .what-we-do-section{
-        max-width: 1920px;
         width: 100%;
-        margin-inline: auto;
         background-color: var(--off-white);
         display: flex;
         align-items: center;
-        justify-content: end;
-        gap: 150px;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
     .what-we-do-section  .text-content{
         display: flex;
-        /*align-items: start;*/
+        align-items: start;
         justify-content: center;
-       /*width: 100%;*/
-        gap: 150px;
+        width: 100%;
+        gap: 50px;
 
+    }
+    .what-we-do-section .wds-chip{
+        width: 100%;
+        max-width: 150px;
     }
     .what-we-do-section .wds-chip-text{
         gap: 20px;
@@ -341,7 +343,7 @@
     }
 
     .what-we-do-section  .features{
-        max-width: 500px;
+        /*max-width: 500px;*/
         display: flex;
         flex-direction: column;
         gap: 45px;
@@ -350,7 +352,6 @@
         font-family: var(--primary-font);
         font-size: var(--font-section-title);
         font-weight: var(--thick);
-        /*width: 100%;*/
         width: 600px;
     }
     .what-we-do-section  .feature-list{
@@ -363,7 +364,7 @@
         font-family: var(--secondary-font);
         display: flex;
         gap: 38px;
-        width: 530px;
+        max-width: 530px;
     }
 
     .what-we-do-section .number{
@@ -392,8 +393,17 @@
         justify-content: center;
         align-items: center;
         max-width: 800px;
-        width: 100%;
+        width: clamp(390px, 100%, 800px);
     }
+    .wds-image-wrapper img{
+        width: 100% ;
+        object-fit: cover;  
+        height: 100%;
+    }
+    .text-content,
+    .wds-image-wrapper {
+    flex: 1;
+}
     .what-we-do-section .cover{
         position: absolute;
         width: 100%;
@@ -419,7 +429,7 @@
         color: var(--white);
     }
     .what-we-do-section .quote{
-        width: 680px;
+        width: 100%;
         font-family: var(--primary-font);
         font-weight: var(--thick);
         font-size: 40px;
@@ -430,9 +440,10 @@
         font-weight: var(--regular);
     }
 
-    @media (max-width: 1440px){
+    @media (max-width: 1560px){
         .what-we-do-section .text-content{
-            padding-left: 80px;
+            padding-left: 50px;
+            gap: 5px;
         }
         .what-we-do-section .feature{
             font-size: var(--font-m);
@@ -443,11 +454,44 @@
         .what-we-do-section .feature-list{
             gap: 20px;
         }
+        .wds-chip{
+            font-size: var(--font-s);
+        }
+        .quote{
+            font-size: var(--font-xxxl);
+        }
     }
-    @media (max-width: 1200px) {
+    @media (max-width: 1495px) {
         .text-content{
             flex-direction: column;
-            padding-left: 50px;
+           
+        }
+        .what-we-do-section{
+        gap: 20px;
+        }
+        .wds-chip{
+            font-size: var(--font-xs);
+        }
+        .feature{
+            max-width: 400px;
+            font-size: 20px;
+        }
+        .wds-title{
+            max-width: 400px;
+            font-size: 20px;
+        }
+        .what-we-do-section .quote{
+            font-size: var(--font-xxxl);
+        }
+        .description{
+            display: flex;
+            align-items: center;
+        }
+    }
+    @media (max-width: 1200px) {
+        .what-we-do-section .text-content{
+            max-width: 100%;
+            flex-direction: column;
         }
         .what-we-do-section .features{
             gap: 20px;
@@ -462,30 +506,77 @@
             font-size: var(--font-l);
         }
         .what-we-do-section .quote{
-            font-size: var(--font-xl);
+            font-size: var(--font-xxl);
         }
         .what-we-do-section .date{
-            font-size: var(--font-m);
+            font-size: var(--font-l);
         }
         .what-we-do-section .feature-list ,
         .what-we-do-section .list-item {
             gap: 10px;
         }
+        .what-we-do-section .wds-button {
+            width: 150px; 
+            padding: 15px;
+            font-size: var(--font-m);
+            border-radius: 40px; 
+        }
+        .what-we-do-section .wds-image-wrapper {
+            width: 100%;
+            height: 100%; 
+        }
+    
+        .wds-image-wrapper img {
+            width: 100%;
+            height: 100%;
+        }
+      
     }
 
     @media (max-width: 992px){
+        .what-we-do-section .text-content{
+            padding: 30px 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width:100%;
+            width: 100%;
+        }
+
+       .what-we-do-section .list-item{
+           max-width: unset;
+       }
+       .what-we-do-section .wds-chip{
+        align-self: flex-start;
+        }
+        .what-we-do-section .wds-button{
+            width: 120px;
+            font-size: var(--font-s);
+            height: auto;
+            padding: 10px 5px;
+        }
+        .what-we-do-section .wds-title{
+            font-size: var(--font-xxxl);
+            max-width: 100%;
+            width: 100%;
+            line-break: unset;
+       
+        }
         .wds-chip-text{
             font-size: var(--font-xs);
         }
         .what-we-do-section{
             flex-direction: column;
-            padding: 20px;
+        }
+        .what-we-do-section .wds-button{
+            height: auto;
+            width: 100%;
+            max-width: 100%;
         }
         .what-we-do-section .features{
+            max-width: 100%;
+            width: 100%;
             gap: 10px;
-        }
-        .wds-title{
-            font-size: var(--font-xl);
         }
         .what-we-do-section .feature-list{
             gap: 10px;
@@ -494,23 +585,27 @@
             gap: 10px;
         }
         .what-we-do-section .number{
-            font-size: var(--font-m);
+            font-size: var(--font-l);
         }
         .what-we-do-section .feature{
-            font-size: var(--font-xs);
+            font-size: var(--font-m);
+            max-width: 100%;
+            width: 100%;
         }
         .wds-button{
             height: 30px;
         }
         .what-we-do-section .cover{
             border-radius: 20px 20px 0 0;
+            height: 100px;
         }
         .what-we-do-section .quote{
-            font-size: var(--font-m);
+            font-size: var(--font-l);
         }
         .what-we-do-section .date{
             font-size: var(--font-s);
         }
+
     }
     @media (max-width: 768px) {
         .what-we-do-section{
@@ -521,8 +616,19 @@
         .wds-image-wrapper{
             max-width: 100%;
         }
+        .what-we-do-section .wds-title{
+            font-size: var(--font-xxl);
+        }
+     
     }
     @media (max-width: 576px) {
+        .what-we-do-section .text-content{
+            padding: 20px;
+        }
+        .what-we-do-section .wds-title{
+            font-size: var(--font-xl);
+        }
+        
         .what-we-do-section .number{
             font-size: var(--font-m);
             width: 20px;
@@ -540,5 +646,4 @@
             width: 100%;
         }
     }
-
     /*What We Do Section End*/
