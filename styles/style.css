@@ -526,7 +526,7 @@
             height: 100%;
         }
         .what-we-do-section .cover{
-            height: 180px;
+            height: 130px;
         }
       
     }
@@ -589,6 +589,9 @@
             max-width: 100%;
             width: 100%;
         }
+        .what-we-do-section .cover{
+            height: 180px;
+         }
     }
     @media (max-width: 768px) {
         .what-we-do-section{
@@ -616,7 +619,7 @@
             width: 20px;
         }
         .what-we-do-section .cover{
-           height: 130px;
+           height: 150px;
         }
         .what-we-do-section .quote{
             font-size: var(--font-l);
