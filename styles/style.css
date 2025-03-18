@@ -468,7 +468,7 @@
     }
     @media (max-width: 1495px) {
         .what-we-do-section .text-content{
-            padding-left: 20px;
+            padding: 20px;
             flex-direction: column;
             gap: 20px;
         }
@@ -573,7 +573,7 @@
         .what-we-do-section .features{
             max-width: 100%;
             width: 100%;
-            gap: 10px;
+            gap: 27px;
         }
         .what-we-do-section .feature-list{
             gap: 10px;
@@ -616,7 +616,7 @@
             width: 20px;
         }
         .what-we-do-section .cover{
-           height: 150px;
+           height: 130px;
         }
         .what-we-do-section .quote{
             font-size: var(--font-l);
