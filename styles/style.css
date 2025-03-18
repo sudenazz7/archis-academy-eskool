@@ -700,3 +700,111 @@
 
     
     /* About Section End */
+
+    /* Our Section Start*/
+     .our-services-section{
+        padding: 80px 50px;
+        position: relative;
+     }
+     .services-wrapper{
+        width:100%;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        position: relative;
+     }
+     .services-chip-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+     }
+     .services-chip-text{
+       color:#8D8D8D;
+       font-family: var(--secondary-font);
+
+     }
+     .services-chip-icon::after{
+        content: "◆";
+        color:  #8D8D8D;
+        font-size: 20px;
+        display: inline-block;
+    }
+     .services-content{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+     }
+     .services-list{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width:100%;
+        margin-left: 400px;
+     }
+     .services-list .services-title ,
+     .services-list .service{
+        color: var(--orange);
+        font-family: var(--primary-font);
+        font-weight: var(--thick);
+        font-size: 45px;
+     }
+     .services-list .services-title{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+     }
+     /*
+     .services-list .services-arrow{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        padding: 10px;
+        border: 1px solid var(--orange);
+        display: grid;
+        place-items: center;
+     }*/
+     .services-list .service{
+        cursor: pointer;
+        list-style: none;
+        color: var(--white);
+        transition: all 0.2s ease-in-out;
+     }
+     .services-list .service:hover{
+        color: var(--orange);
+        transform: translateX(10px);
+     }
+     .services-image-container{
+        height: 100%;
+        width: 100%;
+        display: initial;
+        object-fit: cover;
+     }
+
+    .services-left-line{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 25%;
+    }
+    .services-right-line{
+        position: absolute;
+        right: 20px;
+        bottom: 5px;
+        z-index: 3;
+        width: 30%;
+    }
+    
+    .services-blur-img{
+        width: 250px;
+        position: absolute;
+        right: 5%;
+        bottom: 5%;
+        display: grid;
+        place-items: center;
+        z-index: 2;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+    /* Our Section End*/
+
