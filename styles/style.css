@@ -899,6 +899,183 @@
         }
     }
     /*What We Do Section End*/
+    
+    /* Export Coaching Section Start*/
+
+    .expert-coaching-section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 20px;
+        position: relative;
+        background: linear-gradient(to bottom, #f0f0f0 35%, #ffffff 35%);
+    }
+
+    .coaching-container{
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .coaching-top-container{
+        display: flex;
+        justify-content: space-between;
+        gap: 250px;
+    }
+
+    .coaching-chip-1{
+        height: fit-content;
+    }
+    .coaching-chip-icon-1:before {
+        content: "◆";
+        color:  #8D8D8D;
+        font-size: 25px;
+        margin-right: 8px;
+        display: inline-block;
+    }
+    .coaching-top-container .coaching-text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .coaching-title{
+        font-family: var(--primary-font);
+        font-size: var(--font-section-title);
+        font-weight: var(--thick);
+        line-height: normal;
+        max-width: 700px;
+    }
+
+    .coaching-description{
+        font-family: var(--secondary-font);
+        font-size: var(--font-l);
+        font-weight: var(--regular);
+        line-height: 30px;
+    }
+
+    .coaching-cta-btn{
+        color: var(--282828 , #282828);
+        background: none;
+        font-family: var(--secondary-font);
+        font-size: var(--font-xl);
+        list-style: normal;
+        font-weight: var(--medium);
+        line-height: normal;
+        width: 190px;
+        border: 1px solid var(--main-black);
+        border-radius: 50px;
+        padding: 20px 15px ;
+    }
+    .coaching-cta-btn::after{
+        content: '→';
+        margin-left: 8px;
+        font-size: 18px;
+    }
+
+    .coaching-line-vertical{
+        width: 1px;
+        height: 250px;
+        background-color: var(--main-black);
+    }
+
+    .coaching-middle-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .coaching-middle-container .coaching-text-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 350px;
+    }
+
+    .coaching-line-horizontal{
+        width: 100%;
+        height: 1px;
+        background-color: var(--main-black);
+    }
+    .coaching-chip-icon-2::before{
+        content: "◆";
+        color:  var(--orange);
+        font-size: 25px;
+        margin-right: 8px;
+        display: inline-block;
+    }
+
+    .coaching-chip-2{
+        display: flex;
+        gap: 25px;
+    }
+    .coaching-chip-text{
+        color: #8D8D8D;
+        font-family: var(--secondary-font);
+        font-size: var(--font-m);
+        font-weight: var(--medium);
+        line-height: 30px;
+    }
+
+    .coaching-middle-container .coaching-chip-text{
+        color: var(--main-black);
+        font-family: var(--secondary-font);
+        font-size: var(--font-m);
+        font-weight: var(--regular);
+        line-height: 30px;
+    }
+
+    .coaching-img{
+        max-width: 1000px;
+        width: 70%;
+        height: auto;
+        object-fit: contain;
+    }
+    .coaching-bottom-container{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .coaching-bottom-container .feature-card-container{
+        width: fit-content;
+        margin-left: 40%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+        row-gap: 80px;
+    }
+
+    .coaching-feature-card{
+        display: flex;
+        gap: 15px;
+        max-width: 450px;
+    }
+
+    .feature-card-icon{
+        max-width: 110px;
+    }
+    .feature-card-text{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .feature-card-title{
+        font-family: var(--primary-font);
+        font-size: var(--font-xxl);
+        font-weight: var(--thick);
+        line-height: 30px;
+    }
+
+    .feature-card-description{
+        font-family: var(--secondary-font);
+        font-size: var(--font-m);
+        font-weight: var(--regular);
+        line-height: 30px;
+    }
+
+    /* Export Coaching Section End*/
 
 .footer-section{
     background-color: #282828;
