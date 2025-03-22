@@ -916,17 +916,18 @@
         max-width: var(--max-width);
         display: flex;
         flex-direction: column;
-        gap: 100px;
+        gap: 150px;
     }
 
     .coaching-top-container{
         display: flex;
         justify-content: space-between;
-        gap: 250px;
+        gap: 20px;
     }
 
     .coaching-chip-1{
         height: fit-content;
+        padding: 0;
     }
     .coaching-chip-icon-1:before {
         content: "◆";
@@ -1040,7 +1041,7 @@
     }
     .coaching-bottom-container .feature-card-container{
         width: fit-content;
-        margin-left: 40%;
+        margin-left: 35%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 40px;
@@ -1073,6 +1074,174 @@
         font-size: var(--font-m);
         font-weight: var(--regular);
         line-height: 30px;
+    }
+
+    @media screen and (max-width: 1200px){
+        .coaching-container{
+            padding-left: 20px;
+        }
+        .coaching-title{
+            font-size: 40px;
+            max-width: 600px;
+        }
+        .coaching-middle-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: nowrap; 
+        }
+        .coaching-middle-container .coaching-text-container{
+            width: 100%;
+            gap: 25px;
+        }
+
+        .coaching-middle-container .coaching-chip-text{
+            max-width: 100%;
+        }
+        .coaching-chip-icon-1 ,
+        .coaching-chip-icon-2{
+            width: 50px;
+        }
+        .feature-card-icon{
+            max-width: 80px;
+        }
+        .feature-card-title {
+            font-size: var(--font-xl);
+        }
+        .feature-card-description {
+            font-size: var(--font-s);
+        }
+        
+    }
+
+    @media screen and (max-width: 1028px) {
+        .coaching-middle-container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .coaching-middle-container .coaching-icon-container {
+            flex-basis: 50%; 
+            max-width: 400px;
+        }
+    
+        .coaching-middle-container .coaching-img {
+            flex-basis: 50%; 
+            max-width: 600px;
+        }
+        .coaching-middle-container .coaching-text-container{
+            padding-top: 100px;
+        }
+       
+        .coaching-title{
+            font-size: 36px;
+            max-width: 500px;
+        }
+        .coaching-cta-btn{
+            width: 150px;
+            font-size: var(--font-m);
+            border-radius: 40px;
+            padding: 15px 5px;
+        }
+        .coaching-chip-icon-1 ,
+        .coaching-chip-icon-2{
+            width: 64px;
+        }
+        .coaching-bottom-container .feature-card-container{
+           margin-left: 0;
+        }
+    }
+    @media screen and (max-width: 780px){
+        .expert-coaching-section{
+            background: var(--white);
+        }
+        .coaching-container{
+            gap: 100px;
+        }
+        .coaching-line-vertical,
+        .coaching-line-horizontal{
+            display: none;
+        }
+        .coaching-top-container{
+            flex-direction: column;
+        }
+        .coaching-title{
+            font-size: var(--font-xxl);
+        }
+        .coaching-description,
+        .coaching-cta-btn {
+            font-size: var(--font-m);
+        }
+        .coaching-middle-container{
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .coaching-middle-container .coaching-text-container{
+            padding-top: 0;
+            font-size: var(--font-s);
+        }
+        .coaching-chip-icon-1,
+        .coaching-chip-icon-2{
+            width: 50px;
+        }
+       .coaching-chip-text{
+            font-size: var(--font-s);
+        }
+        .coaching-img{
+            width: 100%;
+        }
+        .coaching-bottom-container .feature-card-container{
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            width: fit-content;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+        }
+         .feature-card-description{
+            max-width: 250px;
+         }
+        .feature-card-icon{
+            width: 70px;
+        }
+    }
+
+    @media screen and (max-width: 576px){
+        .coaching-cta-btn{
+            width: 100%;
+            padding: 5px;
+        }
+        .coaching-middle-container .coaching-text-container{
+            max-width: 100%;
+        }
+        .coaching-chip-icon-1,
+        .coaching-chip-icon-2{
+            width: 30px;
+        }
+        .coaching-bottom-container{
+            padding-top: 0;
+        }
+        .coaching-feature-card{
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 15px;
+        }
+        .feature-card-icon {
+            flex-shrink: 0;
+            width: 70px;
+        }
+        .feature-card-text {
+            flex-grow: 1; 
+        }
+}
+
+    @media screen and (max-width: 480px){
+        .coaching-chip-icon-1,
+        .coaching-chip-icon-2{
+            width: 42px;
+        }
     }
 
     /* Export Coaching Section End*/
