@@ -1157,7 +1157,7 @@
             background: var(--white);
         }
         .coaching-container{
-            gap: 100px;
+            gap: 40px;
         }
         .coaching-line-vertical,
         .coaching-line-horizontal{
