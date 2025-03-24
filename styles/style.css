@@ -1559,7 +1559,23 @@
             font-size: var(--font-m);
         }
     }
-    @media screen and (max-width: 536px){
+    @media screen and (max-width: 769px){
+        .coaching-benefits-content .coaching-benefits-description {
+            max-width: 600px;
+            width: 100%;
+        }
+        .coaching-benefits-content {
+            max-width: none;
+        }
+        .coaching-benefits-card .coaching-index{
+            font-size: 40px;
+            min-width: 60px;
+        }
+    }
+    @media screen and (max-width: 540px){
+        .coaching-benefits-section{
+            overflow: hidden;
+        }
         .coaching-benefits-section{
             padding: 20px;
             background-color: var(--off-white);
@@ -1568,8 +1584,8 @@
             font-size: var(--font-xl);
         }
         .coaching-benefits-card .coaching-index{
-            font-size: var(--font-xxl);
-            min-width: 35px;
+            font-size: 32px;
+            min-width: 45px;
         }
         .coaching-benefits-content .coaching-benefits-title{
             font-size: var(--font-xl);
