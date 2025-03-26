@@ -1751,11 +1751,10 @@
         }
         .testimonials-section .testimonial-text-container{
             max-width: 100%;
-            gap: 80px;
+            gap: 50px;
         }
         .testimonials-section .testimonial-container{
             align-items: unset;
-            gap: 40px;
         }
         .testimonials-section .testimonial-img-container{
             margin-left: unset;
@@ -1784,7 +1783,7 @@
         }
         .testimonials-section .testimonial-text-container{
             max-width: 100%;
-            margin-top: 40px;
+            margin-top: 25px;
             gap: 30px;
         }
     }
