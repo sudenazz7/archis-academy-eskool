@@ -919,13 +919,53 @@
     }
     .banner-img-container .course-banner-img{
         width: 100%;
+        max-width: 1100px;
         height: 100%;
         object-fit: cover;
     }
+    .banner-blur-container{
+        position: absolute;
+        bottom:0;
+        left:0;
+        z-index:1;
+    }
+    .banner-blur-container img{
+        border-radius: 10px;
+        width: 485px;
+        height: auto;
+        backdrop-filter: blur(5px);
+
+    }
+    .banner-blur-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image:url("/assets/new-course-section/new-course-dot-pattern.svg");
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        opacity: 0.8;
+    }
+
+    .banner-logo-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .banner-logo-img {
+        width: 200px; 
+        height: auto;
+    }
+    
     .banner-content-container{
         display: flex;
         position: relative;
         flex-direction: column;
+        max-width: 550px;
         gap: 20px;
         padding: 40px;
         color: var(--white);
@@ -934,9 +974,20 @@
     }
 
     .banner-chip{
+        color: #FFFFFF;
+        font-family: var(--secondary-font);
+        font-size: var(--font-xl);
+        font-weight: var(--medium);
         position: absolute;
         top: 40px;
         left: 40px;
+    }
+    .banner-chip::before {
+        content: "◆";
+        color:   #FFFFFF;
+        font-size: 30px;
+        margin-right: 8px;
+        display: inline-block;
     }
     .banner-content{
         margin-top: 20dvh;
@@ -944,27 +995,37 @@
         flex-direction: column;
     }
     .banner-content .banner-content-date{
-    /* color: var(--white);*/
+        color: var(--white);
         font-family: var(--secondary-font);
         font-size: var(--font-xxl);
         font-weight: var(--medium);
         line-height: 30px;
     }
     .banner-content .banner-content-title{
-       /* color: var(--white);*/
+        color: var(--white);
         font-family: var(--primary-font);
-        font-size: var(--font-heading);
+        font-size: var(--font-section-title);
         font-weight: var(--thick);
         line-height: 54px;
+        margin-bottom: 20px;
     }
     .banner-content .banner-content-description{
-        /*color: var(--white);*/
+        color: var(--white);
         font-family: var(--secondary-font);
         font-size: var(--font-l);
         font-weight: var(--regular);
         line-height: 30px;
     }
-    .bamner-cta-btn{
+    .banner-cta-btn{
+        font-family: var(--secondary-font);
+        font-size: var(--font-xl);
+        font-weight: var(--regular);
+        border: 1px solid #FFFFFF;
+        border-radius: 50px;
+        background: none;
+        color: #FFFFFF;
+        padding: 20px 25px;
+        width:160px;
         margin-block-start: 16px ;
     }
 
