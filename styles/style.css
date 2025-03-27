@@ -1789,6 +1789,99 @@
     }
      /*Testimonials Section End*/
 
+    /*Event Schedule Section Start*/
+     .event-schedule-section{
+        background-color: var(--white);
+        padding: 90px 20px;
+     }
+     .schedule-container{
+        max-width: var(--max-width);
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+     }
+     .schedule-container .schedule-chip{
+        height: fit-content;
+     }
+     .schedule-container .schedule-chip-text{
+        color: #8D8D8D;
+        font-family: var(--secondary-font);
+        font-weight: var(--medium);
+        font-size: var(--font-xl);
+     }
+     .schedule-chip:before {
+        content: "◆";
+        color:  #8D8D8D;
+        font-size: var(--font-xxxl);
+        margin-right: 8px;
+        display: inline-block;
+    }
+     .schedule-card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 85px;
+        max-width: 950px;
+        width: 100%;
+     }
+     .schedule-card{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+        border-top: 1px solid var(--main-black);
+        padding-top: 10px;
+     }
+     .schedule-date-container{
+        display: flex;
+        gap: 10px;
+     }
+     .schedule-date-day{
+        color: var(--orange);
+        font-family: var(--primary-font);
+        font-size: var(--font-heading-medium);
+        font-weight: var(--thick);
+        line-height: normal;
+     }
+     .schedule-date-month-year{
+        font-family: var(--secondary-font);
+        font-size: var(--font-l);
+        font-weight: var(--regular);
+        line-height: 30px;
+     }
+     .schedule-title{
+        font-family: var(--primary-font);
+        font-size: var(--font-subheading);
+        font-weight: var(--thick);
+        line-height: normal;
+     }
+     .schedule-description{
+        font-family: var(--secondary-font);
+        font-size: var(--font-m);
+        font-weight: var(--regular);
+        line-height: 30px;
+        opacity: 0.5;
+        margin-top: 10px;
+     }
+     .schedule-view-btn{
+        font-family: var(--secondary-font);
+        font-size: var(--font-l);
+        font-weight: var(--medium);
+        background: none;
+        border-radius: 50px;
+        border: 1px solid var(--main-black);
+        padding: 20px 25px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+     }
+     .schedule-view-btn img{
+        width: 16px; 
+        height: auto;
+     }
+
+     /*Event Schedule Section End*/
+
 
     /*Footer Section Start*/
 
