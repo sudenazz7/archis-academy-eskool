@@ -1882,16 +1882,41 @@
         width: 16px; 
         height: auto;
      }
-     @media screen and (max-width: 1200px) {
+     @media screen and (max-width: 1230px) {
+        .schedule-card-container{
+            max-width: 850px;
+        }
         .schedule-title{
             font-size: var(--font-xxxl);
+        }
+        .schedule-container .schedule-chip-text{
+            font-size: var(--font-l);
+        }
+        .schedule-container .schedule-chip{
+            font-size: var(--font-xxl);
         }
         .schedule-date-day{
             font-size: 50px;
         }
+        .schedule-view-btn{
+            font-size: var(--font-m);
+            padding: 20px;
+            width: 160px;
+        }
+        
+     }
+     @media screen and (max-width: 1095px){
+        .schedule-container{
+            flex-direction: column;
+            padding: 10px;
+        }
+        .schedule-card-container{
+            max-width: 100%;
+        }
+
      }
      @media screen and (max-width: 992px){
-        .scheduşe-title{
+        .schedule-title{
             font-size: var(--font-xxl);
         }
         .schedule-date-day{
@@ -1908,10 +1933,12 @@
         .schedule-card{
             flex-direction: column;
         }
+       
         .schedule-date-day{
             font-size: var(--font-xl);
         }
         .schedule-date-month-year{
+
             font-size: var(--font-m);
             width: fit-content;
         }
@@ -1925,12 +1952,12 @@
         }
         .schedule-view-btn{
             font-size: var(--font-m);
-            margin-left: auto;
         }
      }
      @media screen and (max-width: 576px){
         .schedule-view-btn{
             width: 100%;
+            padding: 10px;
             justify-content: center;
         }
      }
