@@ -1991,11 +1991,15 @@
         flex-direction: column;
         gap: 20px;
     }
+    .newsleetter-chip{
+        margin: 0 5px;
+    }
     .newsletter-section .newsletter-chip-text{
         font-size: var(--font-xs);
     }
     .newsletter-section .subscribe{
         gap: 16px;
+        margin: 5px;
     }
     .newsletter-section .label{
         font-size: var(--font-l);
