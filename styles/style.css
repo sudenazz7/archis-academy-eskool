@@ -1900,7 +1900,164 @@
     .newsletter-img-wrapper .image:nth-child(6){
         grid-area: c6;
     }
-   
+   @media screen and (max-width: 1440px) {
+    .newsletter-section{
+        padding-block: 60px;
+        gap: 100px;
+    }
+    .newsletter-section .form{
+        max-width: var(--breakpoint-xl);
+    }
+    .newsletter-section .subscribe{
+        gap: 40px;
+    }
+    .newsletter-section .label{
+        font-size: var(--font-subheading);
+    }
+    .newsletter-section .email-input{
+        font-size: var(--font-m);
+    }
+    .newsletter-section .subscribe-btn{
+        font-size: var(--font-l);
+    }
+    .newsletter-section .newsletter-img-wrapper{
+        max-width: var(--breakpoint-xl);
+    }
+   }
+   @media screen and (max-width: 1200px) {
+    .newsletter-section{
+        padding-block: 50px;
+        gap: 60px;
+    }
+    .newsletter-section .form{
+        max-width: var(--breakpoint-lg);
+    }
+    .newsletter-section .newsletter-chip-text{
+        font-size: var(--font-m);
+    }
+    .newsletter-section .subscribe{
+        gap: 30px;
+        width: 500px;
+    }
+    .newsletter-section .label{
+        font-size: var(--font-xxl);
+        width: 500px;
+    }
+    .newsletter-section .email-input{
+        font-size: var(--font-m);
+    }
+    .newsletter-section .subscribe-btn{
+        font-size: var(--font-l);
+    }
+    .newsletter-section .newsletter-img-wrapper{
+        max-width: var(--breakpoint-lg);
+    }
+   }
+   @media screen and (max-width: 992px){
+    .newsletter-section{
+        padding-block: 40px;
+        gap: 40px;
+    }
+    .newsletter-section .form{
+        max-width: var(--breakpoint-md);
+    }
+    .newsletter-section .newsletter-chip-text{
+        font-size: var(--font-s);
+    }
+    .newsletter-section .subscribe{
+        gap: 20px;
+    }
+    .newsletter-section .label{
+        font-size: var(--font-xl);
+    }
+    .newsletter-section .email-input{
+        font-size: var(--font-s);
+    }
+    .newsletter-section .subscribe-btn{
+        font-size: var(--font-m);
+    }
+    .newsletter-section .newsletter-img-wrapper{
+        max-width: var(--breakpoint-md);
+    }
+   }
+   @media screen and (max-width: 768px){
+    .newsletter-section{
+        padding-block: 30px;
+        gap: 30px;
+    }
+    .newsletter-section .form{
+        max-width: var(--breakpoint-sm);
+        padding-inline: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .newsletter-section .newsletter-chip-text{
+        font-size: var(--font-xs);
+    }
+    .newsletter-section .subscribe{
+        gap: 16px;
+    }
+    .newsletter-section .label{
+        font-size: var(--font-l);
+    }
+    .newsletter-section .email-input{
+        font-size: var(--font-xs);
+    }
+    .newsletter-section .subscribe-btn{
+        font-size: var(--font-s);
+    }
+    .newsletter-section .newsletter-img-wrapper{
+        max-width: var(--breakpoint-sm);
+    }
+    
+   }
+   @media screen and (max-width: 575px){
+    .newsletter-section{
+        padding-block: 20px;
+        gap: 20px;
+    }
+    .newsletter-section .form{
+        flex-direction: column;
+        gap: 16px;
+    }
+    .newsletter-section .newsletter-chip-text{
+        font-size: var(--font-xs);
+    }
+    .newsletter-section .subscribe{
+        gap: 16px;
+        box-sizing: border-box;
+        width: 100%
+    }
+    .newsletter-section .label{
+        font-size: var(--font-m);
+        width: 100%;
+    }
+    .newsletter-section .email-input{
+        font-size: var(--font-m);
+    }
+    .newsletter-section .subscribe-btn{
+        font-size: var(--font-xs);
+    }
+    .newsletter-section .newsletter-img-container {
+        padding-inline: unset;
+    }
+    .newsletter-section .newsletter-img-wrapper{
+      grid-template-areas:
+      "c1 c1"
+      "c2 c2"
+      "c3 c3"
+      "c4 c4"
+      "c5 c5"
+      "c6 c6";
+      border-radius: unset;
+    }
+    .newsletter-section .newsletter-img-wrapper .image{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+   }
     /*Newsletter Section End*/
 
 
