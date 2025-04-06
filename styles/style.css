@@ -1066,6 +1066,8 @@
     @media screen and (max-width: 768px){
         .new-course-section{
             background-color: var(--orange);
+            display: flex;
+            align-items: center;
         }
         .course-banner-wrapper{
             border-radius: 0;
