@@ -1037,6 +1037,7 @@
     @media screen and (max-width: 1200px){
         .new-course-section{
             padding-block: 60px;
+            padding: 15px;
         }
         .banner-content{
             margin-top: 10dvh;
@@ -1092,11 +1093,10 @@
             width: 100%;
         }
         .banner-content{
-            margin-top: 20px;
+            margin-top: 5px;
         }
         .banner-content .banner-cta-btn{
-            width: 95%;
-            margin-inline: auto;
+            width: 100%;
             margin-block-start: 24px;
         }
         }
@@ -1108,10 +1108,6 @@
         .banner-content .banner-content-title{
             font-size: var(--font-xxl);
             line-height: unset;
-        }
-        .banner-content .banner-content-date ,
-        .banner-content .banner-content-description{
-            margin-block-start: 8px;
         }
     }
 
