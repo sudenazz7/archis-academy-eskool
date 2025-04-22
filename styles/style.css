@@ -1796,6 +1796,8 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 30px;
+       
     }
     .strategies-img-container{
         position: relative;
@@ -1807,6 +1809,7 @@
         width: 100% ;
         object-fit: cover;  
         height: 100%;
+        display: block;
     }
     .strategies-text-container{
         display: flex;
@@ -1859,7 +1862,87 @@
         font-weight:  var(--medium);
         background: none;
     }
-    
+    @media (max-width: 1660px){
+        .strategies-text-container{
+            padding: 20px 10px 20px 0;
+        }
+    }
+    @media (max-width: 1300px) {
+        .strategies-section {
+            gap: 20px;
+        }
+        .strategies-title{
+            font-size: 40px;
+            width: unset;
+        }
+        .strategies-btn {
+            width: 150px;        
+            padding: 20px 15px;
+            font-size: var(--font-m);
+        }
+        .strategies-feature {
+            font-size: var(--font-m);
+        }
+        .strategies-number{
+            width: 20px;
+        }
+        .strategies-img-container {
+            width: 100%;
+          }
+          .strategies-img-container img {
+            width: 100%;
+          }
+    }
+    @media (max-width: 1155px) {
+        .strategies-title{
+            font-size: 30px;
+            width: 375px;
+        }
+        .strategies-img-container img {
+            height: 650px;
+          }
+    }
+    @media (max-width: 790px) {
+        .strategies-section{
+            flex-direction: column;
+            align-items: center;
+        }
+        .strategies-text-container{
+            padding: 20px;
+            width: 100%;
+        }
+        .strategies-feature-list{
+            max-width: unset;
+            width: 100%;
+        }
+        .strategies-btn {
+            width: 100%;
+        }
+        .strategies-title{
+            width: 100%;
+            font-size: var( --font-xxl);
+        }
+    }
+    @media (max-width: 590px){
+        .strategies-text-container{
+            padding: 15px;
+        }
+        .strategies-features {
+            gap: 30px;
+        }
+        .strategies-title{
+            font-size: var(--font-xl);
+        }
+        .strategies-list-item {
+            flex-direction: column;
+            gap: 5px;
+        }
+        .strategies-btn {
+            padding: 10px;
+        }
+    }
+ 
+
     /*Strategies Section End*/
 
     /*Footer Section Start*/
