@@ -1070,8 +1070,11 @@
             display: flex;
             align-items: center;
         }
+       
         .course-banner-wrapper{
             border-radius: 0;
+             max-width: none; /* Veya örneğin: 100% */
+            width: 100%;
         }
         .banner-chip{
             position: unset;
@@ -1091,6 +1094,7 @@
          .banner-content-container{
             padding: 5px;
             width: 100%;
+            max-width: unset;
         }
         .banner-content{
             margin-top: 5px;
