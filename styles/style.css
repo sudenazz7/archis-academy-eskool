@@ -216,7 +216,7 @@
     content: "";
     position: absolute;
     top: 14%;
-    left: 12%;
+    left: 7%;
     width: 200px;
     height: 2px;
     background-color: #f9f9f9;
@@ -243,10 +243,97 @@
 }
 .brand-banner-img-container .brand-banner-img{
     width: 100%;
-    height: 100%;
+    height: 600px;
+    object-fit: cover;
 }
-
-
+@media (max-width: 1650px) {
+    .brand-banner-container .banner-line::before{
+        top: 5%;
+    }
+    
+}
+@media (max-width: 1310px){
+    .brand-banner-content{
+        padding: 70px 10px;
+    }
+}
+@media (max-width: 1086px){
+    .brand-banner-container h2{
+        font-size: 35px;
+        max-width: 600px;
+    }
+    .brand-banner-btn{
+        padding: 15px;
+        font-size: 18px;
+    }
+    .brand-banner-btn::after {
+        font-size: 20px;
+    }
+}
+@media (max-width: 860px) {
+    .brand-banner-content{
+        flex-direction: column;
+        gap: 30px;
+        margin-left: unset;
+        padding: 40px 20px;
+    }
+    .brand-banner-btn{
+        width: 100%;
+        padding: 10px;
+    }
+    
+}
+@media (max-width: 650px) {
+    .brand-banner-content{
+        padding: 30px;
+    }
+    .brand-banner-container .banner-line::before{
+        left: 5%;
+    }
+    .brand-banner-container h2 {
+        font-size: 30px;
+        max-width: 100%;
+    }
+    .brand-banner-btn {
+        padding: 7px;
+    }
+}
+@media (max-width: 530px) {
+    .brand-banner-container h2 {
+        font-size: 25px;
+    }
+    .brand-banner-btn {
+        font-size: 15px;
+    }
+    .brand-banner-btn::after {
+        font-size: 15px;
+    }
+}
+@media (max-width: 462px){
+    .brand-banner-content {
+        padding: 30px 25px;
+    }
+    .brand-banner-container h2 {
+        font-size: 20px;
+    }
+    .brand-banner-btn {
+        font-size: 13px;
+        padding: 5px;
+    }
+}
+@media (max-width: 375px){
+    .brand-banner-content {
+        padding: 30px 15px;
+    }
+    .brand-banner-container h2 {
+        font-size: 16px;
+    }
+    .brand-banner-btn {
+        font-size: 11px;
+        padding: 3px;
+    }
+ 
+}
 /* Brand Banner End */
 
 
