@@ -1,4 +1,3 @@
-
 @import "./global/variable.css";
 @import "./global/reset.css";
 
@@ -899,8 +898,8 @@ opacity: 0.8;
         }
     }
     /*What We Do Section End*/
-      /* Our Section Start*/
-      .our-services-section{
+     /* Our Section Start*/
+     .our-services-section{
         padding: 80px 50px;
         position: relative;
      }
@@ -1139,11 +1138,9 @@ opacity: 0.8;
     }
   }
     /* Our Section End*/
+      /* Export Coaching Section Start*/
 
-
-     /* Export Coaching Section Start*/
-
-     .expert-coaching-section{
+      .expert-coaching-section{
         width: 100%;
         display: flex;
         align-items: center;
@@ -1486,8 +1483,8 @@ opacity: 0.8;
     }
 
     /* Export Coaching Section End*/
-      /*Coaching Benefits Section Start*/
-      .coaching-benefits-section{
+     /*Coaching Benefits Section Start*/
+     .coaching-benefits-section{
         padding: 120px 20px;
         position: relative;
         background-color: var(--white);
@@ -1592,8 +1589,8 @@ opacity: 0.8;
     }
 
     /*Coaching Benefits Section End*/
-     /*Testimonials Section Start*/
-     .testimonials-section{
+      /*Testimonials Section Start*/
+      .testimonials-section{
         padding: 70px 20px;
         position: relative;
         background-color: var(--white);
@@ -1786,585 +1783,734 @@ opacity: 0.8;
         }
     }
      /*Testimonials Section End*/
-
-    /*Event Schedule Section Start*/
-    .event-schedule-section{
-        background-color: var(--white);
-        padding: 90px 20px;
-     }
-     .schedule-container{
-        max-width: var(--max-width);
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
+     /*Strategies Section Start*/
+ .strategies-section{
+    width: 100%;
+    background-color: #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.strategies-img-container{
+    position: relative;
+ 
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+.strategies-img-container img{
+    width: 100% ;
+    object-fit: cover;  
+    height: 100%;
+}
+.strategies-text-container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-right: 70px;
+    gap: 30px;
+}
+.strategies-features{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.strategies-title{
+    font-family: var(--primary-font);
+    font-size: var(--font-section-title);
+    font-weight: var(--thick);
+    width: 600px;
+    line-height: 100%;
+}
+.strategies-feature-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 530px;
+}
+.strategies-list-item{
+    list-style: none;
+    font-family: var(--secondary-font);
+    display: flex;
+    gap: 38px;
+}
+.strategies-number{
+    color: var(--light-gray);
+    font-size: var(--font-xxxl);
+    font-weight: var(--medium);
+    width: 30px;
+}
+.strategies-feature{
+    color: var(--main-black);
+    font-size: var(--font-l);
+}
+.strategies-btn{
+    width: 190px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid var(--main-black);
+    font-family: var(--secondary-font);
+    font-size:  var(--font-xl);
+    font-weight:  var(--medium);
+    background: none;
+}
+@media (max-width: 1660px){
+    .strategies-text-container{
+        padding: 20px 10px 20px 0;
+    }
+}
+@media (max-width: 1300px) {
+    .strategies-section {
         gap: 20px;
-     }
-     .schedule-container .schedule-chip{
-        height: fit-content;
-     }
-     .schedule-container .schedule-chip-text{
-        color: #8D8D8D;
-        font-family: var(--secondary-font);
-        font-weight: var(--medium);
-        font-size: var(--font-xl);
-     }
-     .schedule-chip:before {
-        content: "◆";
-        color:  #8D8D8D;
-        font-size: var(--font-xxxl);
-        margin-right: 8px;
-        display: inline-block;
     }
-     .schedule-card-container{
-        display: flex;
-        flex-direction: column;
-        gap: 85px;
-        max-width: 950px;
-        width: 100%;
-     }
-     .schedule-card{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        gap: 20px;
-        border-top: 1px solid var(--main-black);
-        padding-top: 10px;
-     }
-     .schedule-date-container{
-        display: flex;
-        gap: 10px;
-     }
-     .schedule-date-day{
-        color: var(--orange);
-        font-family: var(--primary-font);
-        font-size: var(--font-heading-medium);
-        font-weight: var(--thick);
-        line-height: normal;
-     }
-     .schedule-date-month-year{
-        font-family: var(--secondary-font);
-        font-size: var(--font-l);
-        font-weight: var(--regular);
-        line-height: 30px;
-        width: 50px;
-     }
-     .schedule-title{
-        font-family: var(--primary-font);
-        font-size: var(--font-subheading);
-        font-weight: var(--thick);
-        line-height: normal;
-     }
-     .schedule-description{
-        font-family: var(--secondary-font);
-        font-size: var(--font-m);
-        font-weight: var(--regular);
-        line-height: 30px;
-        opacity: 0.5;
-        margin-top: 10px;
-     }
-     .schedule-view-btn{
-        font-family: var(--secondary-font);
-        font-size: var(--font-l);
-        font-weight: var(--medium);
-        background: none;
-        border-radius: 50px;
-        border: 1px solid var(--main-black);
-        padding: 20px 25px;
-        margin: 10px 0;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-     }
-     .schedule-view-btn img{
-        width: 16px; 
-        height: auto;
-     }
-     @media screen and (max-width: 1230px) {
-        .schedule-card-container{
-            max-width: 850px;
-        }
-        .schedule-title{
-            font-size: var(--font-xxxl);
-        }
-        .schedule-container .schedule-chip-text{
-            font-size: var(--font-l);
-        }
-        .schedule-container .schedule-chip{
-            font-size: var(--font-xxl);
-        }
-        .schedule-date-day{
-            font-size: 50px;
-        }
-        .schedule-view-btn{
-            font-size: var(--font-m);
-            padding: 20px;
-            width: 160px;
-        }
-        
-     }
-     @media screen and (max-width: 1095px){
-        .schedule-container{
-            flex-direction: column;
-            padding: 10px;
-        }
-        .schedule-card-container{
-            max-width: 100%;
-        }
-
-     }
-     @media screen and (max-width: 992px){
-        .schedule-title{
-            font-size: var(--font-xxl);
-        }
-        .schedule-date-day{
-            font-size: 36px;
-        }
-     }
-     @media screen and (max-width: 768px){
-        .schedule-container{
-            flex-direction: column;
-        }
-        .schedule-card-container{
-            gap: 40px;
-        }
-        .schedule-card{
-            flex-direction: column;
-        }
-       
-        .schedule-date-day{
-            font-size: var(--font-xxl);
-        }
-        .schedule-date-month-year{
-
-            font-size: var(--font-m);
-            width: fit-content;
-        }
-        .schedule-details{
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-        .schedule-title{
-            font-size: var(--font-xl);
-        }
-        .schedule-view-btn{
-            font-size: var(--font-m);
-        }
-     }
-     @media screen and (max-width: 576px){
-        .schedule-view-btn{
-            width: 100%;
-            padding: 10px;
-            justify-content: center;
-        }
-     }
-     
-
-     /*Event Schedule Section End*/
-
-       /*Newsletter Section Start*/
-    .newsletter-section{
-        display: flex;
-        padding-block: 80px;
-        flex-direction: column;
-        background-color: #E9E9E9;
-        gap: 130px;
-    }
-    .newsletter-section .form {
-        width: 100%;
-        max-width: var(--max-width);
-        margin-inline: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-    }
-    .newsletter-chip-text{
-        color:  #8D8D8D;
-        font-family: var(--secondary-font); 
-        font-size: var(--font-xl);
-        font-weight: var(--medium);
-    }
-   .newsletter-chip-icon::after{
-        content: "◆";
-        color:  #8D8D8D;
-        font-size: var(--font-xxl);
-        margin-right: 8px;
-        display: inline-block;
-    }
-    .newsletter-section .subscribe{
-        display: flex;
-        flex-direction: column;
-        width: max-content;
-        border-bottom: 2px solid var(--main-black);
-        width: 700px;
-        margin: 0 auto;
-        gap: 40px; 
-    }
-    .newsletter-section .label{
-        font-family: var(--primary-font);
+    .strategies-title{
         font-size: 40px;
-        font-weight: var(--thick);
-        width: 780px; 
-        line-height: 100%;
+        width: unset;
     }
-    .newsletter-section .actions{
-        padding-block: 10px;
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-    }
-    .newsletter-section .email-input{
-        width: 70%;
-        outline: none;
-        border: none;
+    .strategies-btn {
+        width: 150px;        
+        padding: 20px 15px;
         font-size: var(--font-m);
-        background-color: transparent;
     }
-
-    .newsletter-section .subscribe-btn{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: var(--font-l);
-        font-weight: var(--medium);
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
+    .strategies-feature {
+        font-size: var(--font-m);
     }
-    .newsletter-section .subscribe-btn img{
+    .strategies-number{
         width: 20px;
     }
-    .newsletter-section .newsletter-img-container{
-        padding-bottom: 5%;
-        padding-inline: 20px;
-        background: linear-gradient(to bottom , var(#E9E9E9) 20% , var(#E9E9E9) 0);
-    }
-    .newsletter-section  .newsletter-img-wrapper{
-        max-width: var(--max-width);
-        margin-inline: auto;
-        border-radius: 20px;
-        overflow: hidden;
-        display: grid;
-        grid-template-areas:
-        "c1 c1 c2 c3"
-        "c4 c5 c6 c6";
- 
-    }
-    .newsletter-img-wrapper .image{
-        height: 100%;
+    .strategies-img-container {
         width: 100%;
-    }
-    .newsletter-img-wrapper .image:nth-child(1){
-        grid-area: c1;
-    }
-    .newsletter-img-wrapper .image:nth-child(2){
-        grid-area: c2;
-    }
-    .newsletter-img-wrapper .image:nth-child(3){
-        grid-area: c3;
-    }
-    .newsletter-img-wrapper .image:nth-child(4){
-        grid-area: c4;
-    }
-    .newsletter-img-wrapper .image:nth-child(5){
-        grid-area: c5;
-    }
-    .newsletter-img-wrapper .image:nth-child(6){
-        grid-area: c6;
-    }
-   @media screen and (max-width: 1440px) {
-    .newsletter-section{
-        padding-block: 60px;
-        gap: 100px;
-    }
-    .newsletter-section .form{
-        max-width: var(--breakpoint-xl);
-    }
-    .newsletter-section .subscribe{
-        gap: 40px;
-    }
-    .newsletter-section .label{
-        font-size: var(--font-subheading);
-    }
-    .newsletter-section .email-input{
-        font-size: var(--font-m);
-    }
-    .newsletter-section .subscribe-btn{
-        font-size: var(--font-l);
-    }
-    .newsletter-section .newsletter-img-wrapper{
-        max-width: var(--breakpoint-xl);
-    }
-   }
-   @media screen and (max-width: 1200px) {
-    .newsletter-section{
-        padding-block: 50px;
-        gap: 60px;
-    }
-    .newsletter-section .form{
-        max-width: var(--breakpoint-lg);
-    }
-    .newsletter-section .newsletter-chip-text{
-        font-size: var(--font-m);
-    }
-    .newsletter-section .subscribe{
-        gap: 30px;
-        width: 500px;
-    }
-    .newsletter-section .label{
-        font-size: var(--font-xxl);
-        width: 500px;
-    }
-    .newsletter-section .email-input{
-        font-size: var(--font-m);
-    }
-    .newsletter-section .subscribe-btn{
-        font-size: var(--font-l);
-    }
-    .newsletter-section .newsletter-img-wrapper{
-        max-width: var(--breakpoint-lg);
-    }
-   }
-   @media screen and (max-width: 992px){
-    .newsletter-section{
-        padding-block: 40px;
-        gap: 40px;
-    }
-    .newsletter-section .form{
-        max-width: var(--breakpoint-md);
-    }
-    .newsletter-section .newsletter-chip-text{
-        font-size: var(--font-s);
-    }
-    .newsletter-section .subscribe{
-        gap: 20px;
-    }
-    .newsletter-section .label{
-        font-size: var(--font-xl);
-    }
-    .newsletter-section .email-input{
-        font-size: var(--font-s);
-    }
-    .newsletter-section .subscribe-btn{
-        font-size: var(--font-m);
-    }
-    .newsletter-section .newsletter-img-wrapper{
-        max-width: var(--breakpoint-md);
-    }
-   }
-   @media screen and (max-width: 768px){
-    .newsletter-section{
-        padding-block: 30px;
-        gap: 30px;
-    }
-    .newsletter-section .form{
-        max-width: var(--breakpoint-sm);
-        padding-inline: 20px;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .newsleetter-chip{
-        margin: 0 5px;
-    }
-    .newsletter-section .newsletter-chip-text{
-        font-size: var(--font-xs);
-    }
-    .newsletter-section .subscribe{
-        gap: 16px;
-        margin: 5px;
-    }
-    .newsletter-section .label{
-        font-size: var(--font-l);
-    }
-    .newsletter-section .email-input{
-        font-size: var(--font-xs);
-    }
-    .newsletter-section .subscribe-btn{
-        font-size: var(--font-s);
-    }
-    .newsletter-section .newsletter-img-wrapper{
-        max-width: var(--breakpoint-sm);
-    }
-    
-   }
-   @media screen and (max-width: 575px){
-    .newsletter-section{
-        padding-block: 20px;
-        gap: 20px;
-    }
-    .newsletter-section .form{
-        flex-direction: column;
-        gap: 16px;
-    }
-    .newsletter-section .newsletter-chip-text{
-        font-size: var(--font-xs);
-    }
-    .newsletter-section .subscribe{
-        gap: 16px;
-        box-sizing: border-box;
-        width: 100%
-    }
-    .newsletter-section .label{
-        font-size: var(--font-m);
+      }
+      .strategies-img-container img {
         width: 100%;
+      }
+}
+@media (max-width: 1155px) {
+    .strategies-title{
+        font-size: 30px;
+        width: 375px;
     }
-    .newsletter-section .email-input{
-        font-size: var(--font-m);
-    }
-    .newsletter-section .subscribe-btn{
-        font-size: var(--font-xs);
-    }
-    .newsletter-section .newsletter-img-container {
-        padding-inline: unset;
-    }
-    .newsletter-section .newsletter-img-wrapper{
-      grid-template-areas:
-      "c1 c1"
-      "c2 c2"
-      "c3 c3"
-      "c4 c4"
-      "c5 c5"
-      "c6 c6";
-      border-radius: unset;
-    }
-    .newsletter-section .newsletter-img-wrapper .image{
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
-    }
-    
-   }
-    /*Newsletter Section End*/
-
-
-    /*Footer Section Start*/
-
-    .footer-section{
-        background-color: #282828;
-        color: var(--white);
-        display: flex;
-        width: 100%;
-        margin: 0 auto;
-        gap: 50px;
-        padding: 20px 90px;
-        justify-content: space-between;
-        
-        }
-        .footer-container-left{
-        display: flex;
-        gap: 250px;
-        }
-        .footer-container-left img{
-        padding: 30px 0 ;
-        max-width: 100%;
-        }
-        .footer-container-right{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        gap: 50px;
-        max-width: 975px;
-        font-family: var(--secondary-font);
-        }
-        .footer-container-right h5 {
-            font-family: var(--primary-font);
-        }
-        .footer-card{
-        display: flex;
+    .strategies-img-container img {
+        height: 650px;
+      }
+}
+@media (max-width: 790px) {
+    .strategies-section{
         flex-direction: column;
         align-items: center;
-        }
-        .title-wrapper{
-        color: #ffffff;
+    }
+    .strategies-text-container{
+        padding: 20px;
+        width: 100%;
+    }
+    .strategies-feature-list{
+        max-width: unset;
+        width: 100%;
+    }
+    .strategies-btn {
+        width: 100%;
+    }
+    .strategies-title{
+        width: 100%;
+        font-size: var( --font-xxl);
+    }
+}
+@media (max-width: 590px){
+    .strategies-text-container{
+        padding: 15px;
+    }
+    .strategies-features {
+        gap: 30px;
+    }
+    .strategies-title{
+        font-size: var(--font-xl);
+    }
+    .strategies-list-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .strategies-btn {
+        padding: 10px;
+    }
+}
+
+
+/*Strategies Section End*/
+ /*Event Schedule Section Start*/
+ .event-schedule-section{
+    background-color: var(--white);
+    padding: 90px 20px;
+ }
+ .schedule-container{
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+ }
+ .schedule-container .schedule-chip{
+    height: fit-content;
+ }
+ .schedule-container .schedule-chip-text{
+    color: #8D8D8D;
+    font-family: var(--secondary-font);
+    font-weight: var(--medium);
+    font-size: var(--font-xl);
+ }
+ .schedule-chip:before {
+    content: "◆";
+    color:  #8D8D8D;
+    font-size: var(--font-xxxl);
+    margin-right: 8px;
+    display: inline-block;
+}
+ .schedule-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    max-width: 950px;
+    width: 100%;
+ }
+ .schedule-card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    border-top: 1px solid var(--main-black);
+    padding-top: 10px;
+ }
+ .schedule-date-container{
+    display: flex;
+    gap: 10px;
+ }
+ .schedule-date-day{
+    color: var(--orange);
+    font-family: var(--primary-font);
+    font-size: var(--font-heading-medium);
+    font-weight: var(--thick);
+    line-height: normal;
+ }
+ .schedule-date-month-year{
+    font-family: var(--secondary-font);
+    font-size: var(--font-l);
+    font-weight: var(--regular);
+    line-height: 30px;
+    width: 50px;
+ }
+ .schedule-title{
+    font-family: var(--primary-font);
+    font-size: var(--font-subheading);
+    font-weight: var(--thick);
+    line-height: normal;
+ }
+ .schedule-description{
+    font-family: var(--secondary-font);
+    font-size: var(--font-m);
+    font-weight: var(--regular);
+    line-height: 30px;
+    opacity: 0.5;
+    margin-top: 10px;
+ }
+ .schedule-view-btn{
+    font-family: var(--secondary-font);
+    font-size: var(--font-l);
+    font-weight: var(--medium);
+    background: none;
+    border-radius: 50px;
+    border: 1px solid var(--main-black);
+    padding: 20px 25px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+ .schedule-view-btn img{
+    width: 16px; 
+    height: auto;
+ }
+ @media screen and (max-width: 1230px) {
+    .schedule-card-container{
+        max-width: 850px;
+    }
+    .schedule-title{
+        font-size: var(--font-xxxl);
+    }
+    .schedule-container .schedule-chip-text{
+        font-size: var(--font-l);
+    }
+    .schedule-container .schedule-chip{
+        font-size: var(--font-xxl);
+    }
+    .schedule-date-day{
+        font-size: 50px;
+    }
+    .schedule-view-btn{
+        font-size: var(--font-m);
+        padding: 20px;
+        width: 160px;
+    }
+    
+ }
+ @media screen and (max-width: 1095px){
+    .schedule-container{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .schedule-card-container{
+        max-width: 100%;
+    }
+
+ }
+ @media screen and (max-width: 992px){
+    .schedule-title{
+        font-size: var(--font-xxl);
+    }
+    .schedule-date-day{
+        font-size: 36px;
+    }
+ }
+ @media screen and (max-width: 768px){
+    .schedule-container{
+        flex-direction: column;
+    }
+    .schedule-card-container{
+        gap: 40px;
+    }
+    .schedule-card{
+        flex-direction: column;
+    }
+   
+    .schedule-date-day{
+        font-size: var(--font-xxl);
+    }
+    .schedule-date-month-year{
+
+        font-size: var(--font-m);
+        width: fit-content;
+    }
+    .schedule-details{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        width: fit-content;
+        gap: 5px;
+    }
+    .schedule-title{
+        font-size: var(--font-xl);
+    }
+    .schedule-view-btn{
+        font-size: var(--font-m);
+    }
+ }
+ @media screen and (max-width: 576px){
+    .schedule-view-btn{
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+    }
+ }
+ 
+
+ /*Event Schedule Section End*/
+  /*Newsletter Section Start*/
+  .newsletter-section{
+    display: flex;
+    padding-block: 80px;
+    flex-direction: column;
+    background-color: #E9E9E9;
+    gap: 130px;
+}
+.newsletter-section .form {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.newsletter-chip-text{
+    color:  #8D8D8D;
+    font-family: var(--secondary-font); 
+    font-size: var(--font-xl);
+    font-weight: var(--medium);
+}
+.newsletter-chip-icon::after{
+    content: "◆";
+    color:  #8D8D8D;
+    font-size: var(--font-xxl);
+    margin-right: 8px;
+    display: inline-block;
+}
+.newsletter-section .subscribe{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    border-bottom: 2px solid var(--main-black);
+    width: 700px;
+    margin: 0 auto;
+    gap: 40px; 
+}
+.newsletter-section .label{
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-weight: var(--thick);
+    width: 780px; 
+    line-height: 100%;
+}
+.newsletter-section .actions{
+    padding-block: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.newsletter-section .email-input{
+    width: 70%;
+    outline: none;
+    border: none;
+    font-size: var(--font-m);
+    background-color: transparent;
+}
+
+.newsletter-section .subscribe-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--font-l);
+    font-weight: var(--medium);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.newsletter-section .subscribe-btn img{
+    width: 20px;
+}
+.newsletter-section .newsletter-img-container{
+    padding-bottom: 5%;
+    padding-inline: 20px;
+    background: linear-gradient(to bottom , var(#E9E9E9) 20% , var(#E9E9E9) 0);
+}
+.newsletter-section  .newsletter-img-wrapper{
+    max-width: var(--max-width);
+    margin-inline: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+    "c1 c1 c2 c3"
+    "c4 c5 c6 c6";
+
+}
+.newsletter-img-wrapper .image{
+    height: 100%;
+    width: 100%;
+}
+.newsletter-img-wrapper .image:nth-child(1){
+    grid-area: c1;
+}
+.newsletter-img-wrapper .image:nth-child(2){
+    grid-area: c2;
+}
+.newsletter-img-wrapper .image:nth-child(3){
+    grid-area: c3;
+}
+.newsletter-img-wrapper .image:nth-child(4){
+    grid-area: c4;
+}
+.newsletter-img-wrapper .image:nth-child(5){
+    grid-area: c5;
+}
+.newsletter-img-wrapper .image:nth-child(6){
+    grid-area: c6;
+}
+@media screen and (max-width: 1440px) {
+.newsletter-section{
+    padding-block: 60px;
+    gap: 100px;
+}
+.newsletter-section .form{
+    max-width: var(--breakpoint-xl);
+}
+.newsletter-section .subscribe{
+    gap: 40px;
+}
+.newsletter-section .label{
+    font-size: var(--font-subheading);
+}
+.newsletter-section .email-input{
+    font-size: var(--font-m);
+}
+.newsletter-section .subscribe-btn{
+    font-size: var(--font-l);
+}
+.newsletter-section .newsletter-img-wrapper{
+    max-width: var(--breakpoint-xl);
+}
+}
+@media screen and (max-width: 1200px) {
+.newsletter-section{
+    padding-block: 50px;
+    gap: 60px;
+}
+.newsletter-section .form{
+    max-width: var(--breakpoint-lg);
+}
+.newsletter-section .newsletter-chip-text{
+    font-size: var(--font-m);
+}
+.newsletter-section .subscribe{
+    gap: 30px;
+    width: 500px;
+}
+.newsletter-section .label{
+    font-size: var(--font-xxl);
+    width: 500px;
+}
+.newsletter-section .email-input{
+    font-size: var(--font-m);
+}
+.newsletter-section .subscribe-btn{
+    font-size: var(--font-l);
+}
+.newsletter-section .newsletter-img-wrapper{
+    max-width: var(--breakpoint-lg);
+}
+}
+@media screen and (max-width: 992px){
+.newsletter-section{
+    padding-block: 40px;
+    gap: 40px;
+}
+.newsletter-section .form{
+    max-width: var(--breakpoint-md);
+}
+.newsletter-section .newsletter-chip-text{
+    font-size: var(--font-s);
+}
+.newsletter-section .subscribe{
+    gap: 20px;
+}
+.newsletter-section .label{
+    font-size: var(--font-xl);
+}
+.newsletter-section .email-input{
+    font-size: var(--font-s);
+}
+.newsletter-section .subscribe-btn{
+    font-size: var(--font-m);
+}
+.newsletter-section .newsletter-img-wrapper{
+    max-width: var(--breakpoint-md);
+}
+}
+@media screen and (max-width: 768px){
+.newsletter-section{
+    padding-block: 30px;
+    gap: 30px;
+}
+.newsletter-section .form{
+    max-width: var(--breakpoint-sm);
+    padding-inline: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+.newsleetter-chip{
+    margin: 0 5px;
+}
+.newsletter-section .newsletter-chip-text{
+    font-size: var(--font-xs);
+}
+.newsletter-section .subscribe{
+    gap: 16px;
+    margin: 5px;
+}
+.newsletter-section .label{
+    font-size: var(--font-l);
+}
+.newsletter-section .email-input{
+    font-size: var(--font-xs);
+}
+.newsletter-section .subscribe-btn{
+    font-size: var(--font-s);
+}
+.newsletter-section .newsletter-img-wrapper{
+    max-width: var(--breakpoint-sm);
+}
+
+}
+@media screen and (max-width: 575px){
+.newsletter-section{
+    padding-block: 20px;
+    gap: 20px;
+}
+.newsletter-section .form{
+    flex-direction: column;
+    gap: 16px;
+}
+.newsletter-section .newsletter-chip-text{
+    font-size: var(--font-xs);
+}
+.newsletter-section .subscribe{
+    gap: 16px;
+    box-sizing: border-box;
+    width: 100%
+}
+.newsletter-section .label{
+    font-size: var(--font-m);
+    width: 100%;
+}
+.newsletter-section .email-input{
+    font-size: var(--font-m);
+}
+.newsletter-section .subscribe-btn{
+    font-size: var(--font-xs);
+}
+.newsletter-section .newsletter-img-container {
+    padding-inline: unset;
+}
+.newsletter-section .newsletter-img-wrapper{
+  grid-template-areas:
+  "c1 c1"
+  "c2 c2"
+  "c3 c3"
+  "c4 c4"
+  "c5 c5"
+  "c6 c6";
+  border-radius: unset;
+}
+.newsletter-section .newsletter-img-wrapper .image{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+}
+/*Newsletter Section End*/
+ /*Footer Section Start*/
+
+ .footer-section{
+    background-color: #282828;
+    color: var(--white);
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 20px 90px;
+    justify-content: space-between;
+    
+    }
+    .footer-container-left{
+    display: flex;
+    gap: 250px;
+    }
+    .footer-container-left img{
+    padding: 30px 0 ;
+    max-width: 100%;
+    }
+    .footer-container-right{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 975px;
+    font-family: var(--secondary-font);
+    }
+    .footer-container-right h5 {
+        font-family: var(--primary-font);
+    }
+    .footer-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .title-wrapper{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    }
+    .title{
+    border-top: 1px solid white;
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: var(--thick);
+    margin-bottom: 20px;
+    margin-top: 35px;
+    }
+    .subtitle-list{
+    color: white;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+    .subtitle-list a {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    text-decoration: none;
+    }
+
+    @media (max-width: 1300px) {
+        .footer-container-right{
+            width: 100%;
+            gap: 10px;
+        }
+        .footer-container-left{
+            gap: 50px;
         }
         .title{
-        border-top: 1px solid white;
-        padding-top: 20px;
-        font-size: 30px;
-        font-weight: var(--thick);
-        margin-bottom: 20px;
-        margin-top: 35px;
+            font-size: var(--font-xxl);
         }
-        .subtitle-list{
-        color: white;
-        list-style: none;
-        font-size: 20px;
-        font-weight: 200;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+        .subtitle{
+            font-size: var(--font-l);
         }
-        .subtitle-list a {
-        display: flex;
-        justify-content: flex-start;
-        color: white;
-        text-decoration: none;
+    }
+    @media (max-width:1092px) {
+        .footer-container-right{
+            width: 100%;
         }
-    
-        @media (max-width: 1300px) {
-            .footer-container-right{
-                width: 100%;
-                gap: 10px;
-            }
-            .footer-container-left{
-                gap: 50px;
-            }
-            .title{
-                font-size: var(--font-xxl);
-            }
-            .subtitle{
-                font-size: var(--font-l);
-            }
+        .title{
+            font-size: 18px;
         }
-        @media (max-width:1092px) {
-            .footer-container-right{
-                width: 100%;
-            }
-            .title{
-                font-size: 18px;
-            }
-            .subtitle{
-                font-size: 16px;
-            }
-    
+        .subtitle{
+            font-size: 16px;
         }
-        @media (max-width:995px) {
-            .footer-section {
-                padding: 50px;
-                flex-wrap: wrap;
-                gap: 0;
-            }
-            .footer-container-left img{
-                margin-left: 0;
-            }
-            .footer-container-right {
-                flex-wrap: wrap;
-            }
-            .footer-container-left img{
-                width: 80%;
-            }
-        }
-    
-        @media (max-width:585px) {
-            .footer-section {
-                padding: 20px;
-                flex-wrap: wrap;
-            }
-            .footer-container-left img{
-                padding: 20px;
-            }
-            .footer-container-right {
-                flex-wrap: wrap;
-                padding: 0 25px;
-            }
-            .footer-container-left img{
-                width: 80%;
-            }
-        }
-    /*Footer Section End*/
 
+    }
+    @media (max-width:995px) {
+        .footer-section {
+            padding: 50px;
+            flex-wrap: wrap;
+            gap: 0;
+        }
+        .footer-container-left img{
+            margin-left: 0;
+        }
+        .footer-container-right {
+            flex-wrap: wrap;
+        }
+        .footer-container-left img{
+            width: 80%;
+        }
+    }
+
+    @media (max-width:585px) {
+        .footer-section {
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .footer-container-left img{
+            padding: 20px;
+        }
+        .footer-container-right {
+            flex-wrap: wrap;
+            padding: 0 25px;
+        }
+        .footer-container-left img{
+            width: 80%;
+        }
+    }
+/*Footer Section End*/
 
