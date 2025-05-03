@@ -1138,9 +1138,10 @@ opacity: 0.8;
     }
   }
     /* Our Section End*/
-      /* Export Coaching Section Start*/
 
-      .expert-coaching-section{
+     /* Export Coaching Section Start*/
+
+     .expert-coaching-section{
         width: 100%;
         display: flex;
         align-items: center;
@@ -1783,7 +1784,7 @@ opacity: 0.8;
         }
     }
      /*Testimonials Section End*/
-     /*Strategies Section Start*/
+       /*Strategies Section Start*/
  .strategies-section{
     width: 100%;
     background-color: #EAEAEA;
@@ -1937,7 +1938,236 @@ opacity: 0.8;
 
 
 /*Strategies Section End*/
- /*Event Schedule Section Start*/
+   
+       /*News Section Start*/
+       .news-section{
+        padding: 120px 50px;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+     }
+     .news-title-container{
+        display: flex;
+        align-items: center;
+     }
+     .news-vector{
+        border: 1px solid var(--white);
+        width: 200px;
+     }
+     .news-title{
+        font-family: var(--primary-font);
+        font-size: var(--font-section-title);
+        font-weight: var(--thick);
+        margin-left: 50px;
+     }
+     .news-card{
+        position: relative;
+        max-width: 100%;
+     }
+     .news-content-container{
+        display: flex;
+        gap: 35px;
+        margin-left: 100px;
+        width: calc(100% - 250px);
+        max-width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+     }
+     .news-card-img-container{
+        position: relative;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+     }
+     .news-card-img-1{
+        background-image: url("/assets/news-section/news-section-card-img-1.svg");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+     }
+
+     .news-card-img-2{
+        background-image: url("/assets/news-section/news-section-card-img-2.svg");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+     }
+     .news-card-img-3{
+        background-image: url("/assets/news-section/news-section-card-img-3.svg");
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center;
+     }
+     .news-card-date{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        width: 150px;
+        height: 300px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     }
+     .news-card-date .news-card-day{
+        font-family: var(--primary-font);
+        font-size: var(--font-heading-medium);
+        font-weight: var(--thick);
+        line-height: 75px;
+        margin-bottom: 5px;
+     }
+     .news-card-day-border{
+        display: flex;
+        border: 1px solid var(--white);
+        width: 60px;
+     }
+     .news-card-date .news-card-month{
+        font-family: var(--secondary-font);
+        font-size: var(--font-l);
+        font-weight: var(--regular);
+        width: 101px;
+        line-height: 30px;
+        margin-top: 10px;
+     }
+     .news-card-text .news-card-tags{
+        font-family: var(--secondary-font);
+        font-size: var(--font-l);
+        font-weight: var(--regular);
+        opacity: 70%;
+        margin-bottom: 10px;
+     }
+     .news-card-text .news-card-title-info{
+        font-family: var(--primary-font);
+        font-size: var(--font-xxxl);
+        font-weight: var(--thick);
+        width: 430px;
+     }
+     .news-card-right-arrow{
+        margin-top: 25px;
+        cursor: pointer;
+     }
+
+     @media screen and (max-width: 1710px){
+        .news-content-container{
+            width: 100%;
+            gap: 20px;
+            margin-left: unset;
+           
+        }
+        .news-card-img-container {
+            width: 410px;
+        }
+     }
+
+     @media screen and (max-width: 1445px){
+        .news-section{
+            padding: 100px 10px 100px 50px;
+            gap: 100px;
+        }
+       
+    }
+ 
+    
+    @media screen and (max-width: 1390px) {
+        .news-content-container {
+          width: 100%;
+          gap: 25px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .news-card {
+          width: 30%;
+          max-width: 100%;
+          flex-grow: 1;
+        }
+        .news-card-img-container {
+          width: 100%;
+        }
+    
+        .news-card-text .news-card-title-info {
+          width: 100%;
+          font-size: var(--font-xxl);
+        }
+      }
+      @media screen and (max-width: 1280px){
+        .news-section{
+            padding: 100px 10px 100px 100px;
+        }
+       
+    }
+       
+      @media screen and (max-width: 1175px){
+        .news-content-container{
+        justify-content: unset;
+        gap: 100px;
+        }
+        .news-card-text .news-card-title-info{
+            font-size: var(--font-xxl);
+        }
+        .news-section{
+            padding: 100px 25px;
+        }
+        .news-card{
+            width: 100%;
+        }
+        
+    }
+    @media screen and (max-width: 1024px){
+        .news-content-container{
+            flex-wrap: wrap;
+        }
+        .news-card-text .news-card-title-info {
+            width: unset;
+        }
+        .news-card-img-container {
+            width: unset;
+        }
+    }
+    @media screen and (max-width: 850px){
+        .news-section{
+            padding: 20px;
+            gap: 40px;
+        }
+        .news-title-container{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .news-card{
+            margin-bottom: 35px;
+            max-width:100%;
+        }
+        .news-title{
+            font-size: var(--font-subheading);
+            margin-left: unset;
+        }
+        .news-card-date .news-card-day {
+            font-size: 50px;
+        }
+        .news-card-date .news-card-month{
+            font-size: var(--font-m);
+        }
+    }
+    @media screen and (max-width: 520px){
+        .news-title{
+            font-size: var(--font-xl);
+        }
+        .card-img-container{
+            width: unset;
+        }
+        .news-card-text .news-card-title-info{
+            font-size: var(--font-xl);
+        }
+        .news-card-right-arrow{
+            width: 40px;
+            height: 40px;
+        }
+    }
+     /*News Section End*/
+
+      /*Event Schedule Section Start*/
  .event-schedule-section{
     background-color: var(--white);
     padding: 90px 20px;
@@ -2513,4 +2743,6 @@ opacity: 0.8;
         }
     }
 /*Footer Section End*/
+
+
 
