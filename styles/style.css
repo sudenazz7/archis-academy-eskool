@@ -1027,7 +1027,15 @@
         padding: 20px 25px;
         width:160px;
         margin-block-start: 16px ;
+        cursor: pointer;
+        transition: transform 0.1s ease, background-color 0.2s ease;
     }
+  
+    .banner-cta-btn:active {
+        transform: scale(0.95);
+        background-color: #f39972; 
+    }
+    
     .banner-img-container-mobile{
         border-radius: 10px;
         overflow: hidden;
@@ -1103,6 +1111,11 @@
             width: 100%;
             margin-block-start: 24px;
         }
+        }
+        @media screen and (max-width: 590px) {
+            .banner-content .banner-content-title{
+                font-size: var( --font-subheading);
+            }
         }
        
     @media screen and (max-width: 520px) {
