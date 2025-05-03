@@ -297,6 +297,9 @@
     .brand-banner-btn {
         padding: 7px;
     }
+    .brand-banner-img-container .brand-banner-img {
+        height: 500px;
+    }
 }
 @media (max-width: 530px) {
     .brand-banner-container h2 {
@@ -307,6 +310,9 @@
     }
     .brand-banner-btn::after {
         font-size: 15px;
+    }
+    .brand-banner-img-container .brand-banner-img {
+        height: 400px;
     }
 }
 @media (max-width: 462px){
@@ -320,10 +326,13 @@
         font-size: 13px;
         padding: 5px;
     }
+    .brand-banner-img-container .brand-banner-img {
+        height: 300px;
+    }
 }
-@media (max-width: 375px){
+@media (max-width: 383px){
     .brand-banner-content {
-        padding: 30px 15px;
+        padding: 15px;
     }
     .brand-banner-container h2 {
         font-size: 16px;
@@ -331,6 +340,9 @@
     .brand-banner-btn {
         font-size: 11px;
         padding: 3px;
+    }
+    .brand-banner-img-container .brand-banner-img {
+        height: 200px;
     }
  
 }
