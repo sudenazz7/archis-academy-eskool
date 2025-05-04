@@ -1,5 +1,6 @@
-@import "./global/variables.css";
 @import "./global/reset.css";
+@import "./global/variables.css";
+
 
 /* Header Section Start */
 .header-section{
@@ -172,13 +173,30 @@
         display: block;
         position: absolute;
         right: 20px;
-        font-size: var(--font-heading-large);
+        font-size: 30px;
+        font-family: "Syne" , sans-serif;
         padding: 15px;
     }
     .contact-button{
         display: none;
         margin-left: 10px;
         font-size: var(--font-m);
+    }
+}
+@media  screen and (max-width: 370px){
+    .mobile-menu-button{
+        font-size: 25px;
+    }
+    .eskool-logo{
+        width: 200px;
+    }
+}
+@media  screen and (max-width: 320px){
+    .eskool-logo{
+        width: 150px;
+    }
+    .mobile-menu-button{
+        font-size: 20px;
     }
 }
 /* Header Section End */
@@ -243,7 +261,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 .hero-title{
     color: white;
@@ -260,7 +278,7 @@
 .hero-text{
     color: white;
     font-family: var(--secondary-font);
-    font-size: var(--font-l);
+    font-size: 18px;
     font-weight: var(--regular);
     line-height: 30px;
     max-width: 45%;
@@ -360,9 +378,11 @@
     }
     .hero-text{
         max-width: 100%;
+        padding-right: 15px;
     }
     .hero-container{
         gap: 30px;
+        margin-top: 25px;
     }
 }
 @media (max-width: 880px) {
@@ -387,7 +407,10 @@
         width: 100%;
         font-size: 40px;
     }
-   
+    .hero-text{
+        padding-right: 0;
+        font-size: 20px;
+    }
     .hero-button {
         width: 100%;
     }
@@ -399,11 +422,16 @@
     .hero-container{
         padding-right: 10px;
      }
-    
+     .hero-img {
+        height: 500px;
+     }
 }
 @media (max-width:680px) {
     .hero-title{
         font-size: 30px;
+    }
+    .hero-container {
+        gap: 40px;
     }
 }
 @media (max-width: 585px) {
@@ -411,12 +439,14 @@
         font-size: 25px;
     }
     .hero-text{
-        font-size: 14px;
+        font-size: 18px;
     }
     .hero-button{
         padding: 10px;
     }
-   
+    .hero-img {
+        height: 450px;
+     }
     
 }
 @media (max-width: 490px) {
@@ -427,14 +457,26 @@
     .hero-title{
         font-size: 20px;
     }
-   
+    .hero-text{
+        font-size: 16px;
+    }
+    .hero-img {
+        height: 400px;
+     }
 }
-@media (max-width: 390px) {
-   
+@media (max-width: 387px) {
+    .hero-container {
+        margin-top: -20px;
+    }
     .hero-title{
         font-size: 16px;
     }
-   
+    .hero-text{
+        font-size: 14px;
+    }
+    .hero-img {
+        height: 350px;
+     }
 }
 
 
