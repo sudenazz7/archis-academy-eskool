@@ -1915,6 +1915,10 @@ opacity: 0.8;
         height: 54px;
         border-radius: 50px;
     }
+    .testimonial-btn:hover{
+        cursor:pointer;
+        transform: scale(0.95);
+    }
     @media screen and (max-width: 1440px) {
         .testimonials-section .testimonial-img-container{
             margin-left: 50px;
@@ -2279,9 +2283,14 @@ opacity: 0.8;
         font-weight: var(--thick);
         width: 430px;
      }
+
      .news-card-right-arrow{
         margin-top: 25px;
+     }
+
+     .news-card-right-arrow:hover{
         cursor: pointer;
+        transform: scale(0.95);
      }
 
      @media screen and (max-width: 1710px){
@@ -2330,13 +2339,15 @@ opacity: 0.8;
         .news-section{
             padding: 100px 10px 100px 100px;
         }
-       
+
+       .news-content-container{
+        gap: 25px;
+       }
     }
        
       @media screen and (max-width: 1175px){
         .news-content-container{
         justify-content: unset;
-        gap: 100px;
         }
         .news-card-text .news-card-title-info{
             font-size: var(--font-xxl);
@@ -2386,7 +2397,7 @@ opacity: 0.8;
     }
     @media screen and (max-width: 520px){
         .news-title{
-            font-size: var(--font-xl);
+            font-size: var(--font-xxl);
         }
         .card-img-container{
             width: unset;
