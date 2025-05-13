@@ -265,11 +265,11 @@
 }
 .hero-title{
     color: white;
-    font-family: var(--primary-font);
+    font-family: "Syne" , sans-serif;
     font-size: 50px;
-    font-weight: var(--semi-bold);
+    font-weight: 600;
     line-height: normal;
-    width: 500px;
+    width: 700px;
     margin-bottom: 10px;
 }
 .hero-title .highlight{
@@ -287,7 +287,7 @@
 .hero-button{
     font-family: var(--secondary-font);
     font-weight: 300;
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     border: 1px solid #fe6839;;
     border-radius: 50px;
@@ -405,7 +405,7 @@
     }
     .hero-title {
         width: 100%;
-        font-size: 40px;
+        font-size: 33px;
     }
     .hero-text{
         padding-right: 0;
@@ -415,9 +415,9 @@
         width: 100%;
     }
 }
-@media (max-width: 770px) {
+@media (max-width: 787px) {
     .hero-title{
-        font-size: 35px;
+        font-size: 28px;
     }
     .hero-container{
         padding-right: 10px;
@@ -428,18 +428,18 @@
 }
 @media (max-width:680px) {
     .hero-title{
-        font-size: 30px;
+        font-size: 25px;
     }
     .hero-container {
         gap: 40px;
     }
 }
-@media (max-width: 585px) {
+@media (max-width: 610px) {
     .hero-title{
-        font-size: 25px;
+        font-size: 22px;
     }
     .hero-text{
-        font-size: 18px;
+        font-size: 16px;
     }
     .hero-button{
         padding: 10px;
@@ -449,7 +449,7 @@
      }
     
 }
-@media (max-width: 490px) {
+@media (max-width: 540px) {
     .hero-container{
         padding-right: 5px;
         padding-left: 8px;
@@ -464,20 +464,35 @@
         height: 400px;
      }
 }
+@media (max-width: 487px) {
+    .hero-title{
+        font-size: 15px;
+    }
+    .hero-button {
+        font-size: 16px;
+    }
+}
 @media (max-width: 387px) {
     .hero-container {
         margin-top: -20px;
     }
     .hero-title{
-        font-size: 16px;
+        font-size: 14px;
     }
     .hero-text{
-        font-size: 14px;
+        font-size: 13px;
     }
     .hero-img {
         height: 350px;
      }
+     .hero-button {
+        font-size: 14px;
+    }
 }
-
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 13px;
+    }
+}
 
 /*Hero Section End*/
