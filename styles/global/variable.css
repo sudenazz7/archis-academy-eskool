@@ -1,12 +1,15 @@
 :root{
     --primary-font : "Syne" , sans-serif;
-    --secondary-font: "Poppins" , sans-serif;
+    --secondary-font: "Poppins", sans-serif;
     
     /* Colors */
     --orange: #fe6839;
     --main-black: #282828;
     --white : #f9f9f9 ;
+    --gray: #8d8d8d;
     --off-white: #eaeaea;
+    --light-gray: #c2c2c2;
+    --dark-gray: #c0c0c0;
 
     /* Font Sizes */
     --font-xs:12px;
@@ -15,14 +18,18 @@
     --font-l:18px;
     --font-xl:20px;
     --font-xxl:24px;
+    --font-xxxl: 30px;
+    --font-subheading: 35px;
+    --font-section-title: 44px;
     --font-heading:60px;
     --font-heading-medium:64px;
     --font-heading-large:80px;
 
     /* Font Weights */
+    --thin:300;
     --regular: 400;
     --medium: 500;
-    --semi-bold: 600;
+    --thick:600;
     --bold: 700;
     --bolder: 800;
     --black: 900;
