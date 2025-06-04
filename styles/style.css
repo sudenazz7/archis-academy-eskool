@@ -1,5 +1,5 @@
 @import "./global/reset.css";
-@import "./global/variables.css";
+@import "./global/variable.css";
 
   
 /* Header Section Start */
@@ -285,9 +285,10 @@
 
 }
 .hero-button{
+    position: relative;
     font-family: var(--secondary-font);
     font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
     border: 1px solid #fe6839;;
     border-radius: 50px;
