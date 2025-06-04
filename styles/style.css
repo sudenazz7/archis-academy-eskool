@@ -1,6 +1,7 @@
-@import "./global/variable.css";
 @import "./global/reset.css";
+@import "./global/variables.css";
 
+  
 /* Header Section Start */
 .header-section{
     background-color: #282828;
@@ -9,16 +10,18 @@
     margin: 0;
     padding: 10px;
     height: 98px;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .header-container{
     display: flex;
     align-items: center;
-    width: var(--max-width);
     justify-content: space-between;
     margin: 0 auto;
     color: #F9F9F9;
     font-size: 20px;
-    max-width: 1440px;
     padding: 2mm;
     width: 100%;
 }
@@ -39,6 +42,7 @@
 }
 .nav-item{
     position: relative;
+    display: flex;
     list-style-type: none;
     gap: 10px;
     align-items: center;
@@ -70,9 +74,9 @@
     font-weight: var(--regular);
     font-size: var(--font-xl);
     color: var(--white);
-    border: 1px solid #fe6839;;
+    border: 1px solid #fe6839;
     border-radius: 50px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     background: transparent;
     line-height: 30px;
     cursor: pointer;
@@ -96,6 +100,7 @@
     position: relative;
     z-index: 10;
 }
+
 .mobile-menu-button:hover{
     color: var(--orange);
     transform: scale(1.2);
@@ -129,7 +134,6 @@
         height: 88px;
     }
     .eskool-logo{
-        padding: 20px 10px;
         width: 250px;
     }
     .nav-container, .nav-list{
@@ -157,7 +161,7 @@
         display: none;
     }
     .eskool-logo{
-        padding: 20px 10px;
+        padding-right: 10px;
         width: 200px;
     }
     .nav-list{
@@ -169,7 +173,8 @@
         display: block;
         position: absolute;
         right: 20px;
-        font-size: var(--font-heading-large);
+        font-size: 30px;
+        font-family: "Syne" , sans-serif;
         padding: 15px;
     }
     .contact-button{
@@ -178,7 +183,320 @@
         font-size: var(--font-m);
     }
 }
+@media  screen and (max-width: 370px){
+    .mobile-menu-button{
+        font-size: 25px;
+    }
+    .eskool-logo{
+        width: 200px;
+    }
+}
+@media  screen and (max-width: 320px){
+    .eskool-logo{
+        width: 150px;
+    }
+    .mobile-menu-button{
+        font-size: 20px;
+    }
+}
 /* Header Section End */
+
+/*Hero Section Start*/
+
+.hero-section{
+    background-color: #282828;
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+.hero-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.hero-section-images{
+    position: relative;
+}
+.hero-blur-rectangle{
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    height: 500px;
+    top: -450px;
+    width: 300px;
+}
+.hero-blur-circle{
+    position: absolute;
+    z-index: 0;
+    height: 550px;
+    width: 220px;
+    filter: blur(10%);
+    left: 760px;
+    top: 50px;
+
+}
+.hero-container-left{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -290px;
+}
+.hero-img{
+    width: 100%;
+    position: relative;
+    z-index: 9;
+
+}
+.hero-container-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.hero-title{
+    color: white;
+    font-family: "Syne" , sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: normal;
+    width: 700px;
+    margin-bottom: 10px;
+}
+.hero-title .highlight{
+    color: #fe6839;
+}
+.hero-text{
+    color: white;
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    font-weight: var(--regular);
+    line-height: 30px;
+    max-width: 45%;
+
+}
+.hero-button{
+    font-family: var(--secondary-font);
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    border: 1px solid #fe6839;;
+    border-radius: 50px;
+    padding: 15px;
+    background: #282828;
+    line-height: 20px;
+    cursor: pointer;
+    transition:0.3s ease;
+    flex-wrap: nowrap;
+    width: 150px;
+}
+.hero-blur-curved{
+    position: absolute;
+    z-index: 1;
+    bottom: -50px;
+    right: -30px;
+    width: 300px;
+    filter: blur(2px); 
+    color: #FFFFFFB2;
+
+}
+.hero-dot-pattern{
+    position: absolute;
+    z-index: 1;
+    bottom: -50px;
+    right: -30px;
+    width: 40%;
+}
+.hero-line-1{
+    position: absolute;
+    z-index: -2;
+    width: 200px;
+    bottom: 0;
+    left: 750px;
+}
+.hero-line-2{
+    position: absolute;
+    z-index: -1;
+    width: 17%;
+    bottom: 0px;
+    left: 180px;
+}
+.hero-line-3{
+    position: absolute;
+    z-index: 0;
+    width: 500px;
+    bottom: 5px;
+    right: 0;
+}
+
+@media (max-width: 1640px) {
+    .hero-line-1{
+        left: 500px;
+    }
+    .hero-blur-circle{
+        left: 520px;
+        top: -25px;
+    }
+    
+}
+@media (max-width: 1400px) {
+    .hero-line-1{
+        left: 470px;
+    }
+    .hero-blur-circle{
+        left: 460px;
+        top: -40px;
+    }
+  
+}
+@media (max-width: 1220px) {
+    .hero-line-1 , 
+    .hero-line-2 ,
+    .hero-line-3,
+    .hero-blur-curved, 
+    .hero-dot-pattern ,
+    .hero-blur-circle ,
+    .hero-blur-rectangle{
+        display: none;
+    }
+    .hero-container-left{
+        margin-left: -200px;
+      
+    }
+    .hero-title{
+        font-size: 45px;
+        width: 100%;
+    }
+    .hero-text{
+        max-width: 100%;
+        padding-right: 15px;
+    }
+    .hero-container{
+        gap: 30px;
+        margin-top: 25px;
+    }
+}
+@media (max-width: 880px) {
+    .hero-container{
+        flex-direction: column;
+        gap: 50px;
+        padding-left: 15px;
+
+    }
+    .hero-container-left{
+        margin-left: unset;
+    }
+    .hero-img{
+        object-fit: cover;
+        height: 600px;
+    }
+    .hero-container-right{
+        width: 100%;
+        gap: 20px;
+    }
+    .hero-title {
+        width: 100%;
+        font-size: 33px;
+    }
+    .hero-text{
+        padding-right: 0;
+        font-size: 20px;
+    }
+    .hero-button {
+        width: 100%;
+    }
+}
+@media (max-width: 787px) {
+    .hero-title{
+        font-size: 28px;
+    }
+    .hero-container{
+        padding-right: 10px;
+     }
+     .hero-img {
+        height: 500px;
+     }
+}
+@media (max-width:680px) {
+    .hero-title{
+        font-size: 25px;
+    }
+    .hero-container {
+        gap: 40px;
+    }
+}
+@media (max-width: 610px) {
+    .hero-title{
+        font-size: 22px;
+    }
+    .hero-text{
+        font-size: 16px;
+    }
+    .hero-button{
+        padding: 10px;
+    }
+    .hero-img {
+        height: 450px;
+     }
+    
+}
+@media (max-width: 540px) {
+    .hero-container{
+        padding-right: 5px;
+        padding-left: 8px;
+     }
+    .hero-title{
+        font-size: 20px;
+    }
+    .hero-text{
+        font-size: 16px;
+    }
+    .hero-img {
+        height: 400px;
+     }
+}
+@media (max-width: 487px) {
+    .hero-title{
+        font-size: 15px;
+    }
+    .hero-button {
+        font-size: 16px;
+    }
+}
+@media (max-width: 387px) {
+    .hero-container {
+        margin-top: -20px;
+    }
+    .hero-title{
+        font-size: 14px;
+    }
+    .hero-text{
+        font-size: 13px;
+    }
+    .hero-img {
+        height: 350px;
+     }
+     .hero-button {
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 13px;
+    }
+}
+
+/*Hero Section End*/
+
 
  /* About Section Start */
 
