@@ -1,7 +1,7 @@
 @import "./global/reset.css";
 @import "./global/variables.css";
 
-
+  
 /* Header Section Start */
 .header-section{
     background-color: #282828;
@@ -1457,9 +1457,9 @@ opacity: 0.8;
   }
     /* Our Section End*/
 
-     /* Export Coaching Section Start*/
+      /* Export Coaching Section Start*/
 
-     .expert-coaching-section{
+      .expert-coaching-section{
         width: 100%;
         display: flex;
         align-items: center;
@@ -1802,6 +1802,237 @@ opacity: 0.8;
     }
 
     /* Export Coaching Section End*/
+
+      /*New Course Section Start*/
+      .new-course-section{
+        padding: 100px 20px;
+        background-color: var(--white);
+    }
+    .course-banner-wrapper{
+        max-width: var(--max-width);
+        margin-inline: auto;
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+    .banner-img-container{
+        display: grid;
+        place-items: center;
+    }
+    .banner-img-container .course-banner-img{
+        width: 100%;
+        max-width: 1100px;
+        height: 100%;
+        object-fit: cover;
+    }
+    .banner-blur-container{
+        position: absolute;
+        bottom:0;
+        left:0;
+        z-index:1;
+    }
+    .banner-blur-container img{
+        border-radius: 10px;
+        width: 485px;
+        height: auto;
+        backdrop-filter: blur(5px);
+
+    }
+    .banner-blur-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image:url("/assets/new-course-section/new-course-dot-pattern.svg");
+        background-size: contain; 
+        background-repeat: no-repeat; 
+        background-position: center; 
+        opacity: 0.8;
+    }
+
+    .banner-logo-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .banner-logo-img {
+        width: 200px; 
+        height: auto;
+    }
+    
+    .banner-content-container{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        max-width: 550px;
+        gap: 20px;
+        padding: 40px;
+        color: var(--white);
+        background-color: var(--orange);
+        z-index: 0;
+    }
+
+    .banner-chip{
+        color: #FFFFFF;
+        font-family: var(--secondary-font);
+        font-size: var(--font-xl);
+        font-weight: var(--medium);
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    .banner-chip::before {
+        content: "◆";
+        color:   #FFFFFF;
+        font-size: 30px;
+        margin-right: 8px;
+        display: inline-block;
+    }
+    .banner-content{
+        margin-top: 20dvh;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-content .banner-content-date{
+        color: var(--white);
+        font-family: var(--secondary-font);
+        font-size: var(--font-xxl);
+        font-weight: var(--medium);
+        line-height: 30px;
+    }
+    .banner-content .banner-content-title{
+        color: var(--white);
+        font-family: var(--primary-font);
+        font-size: var(--font-section-title);
+        font-weight: var(--thick);
+        line-height: 54px;
+        margin-bottom: 20px;
+    }
+    .banner-content .banner-content-description{
+        color: var(--white);
+        font-family: var(--secondary-font);
+        font-size: var(--font-l);
+        font-weight: var(--regular);
+        line-height: 30px;
+    }
+    .banner-cta-btn{
+        font-family: var(--secondary-font);
+        font-size: var(--font-xl);
+        font-weight: var(--regular);
+        border: 1px solid #FFFFFF;
+        border-radius: 50px;
+        background: none;
+        color: #FFFFFF;
+        padding: 20px 25px;
+        width:160px;
+        margin-block-start: 16px ;
+        cursor: pointer;
+        transition: transform 0.1s ease, background-color 0.2s ease;
+    }
+  
+    .banner-cta-btn:active {
+        transform: scale(0.95);
+        background-color: #f39972; 
+    }
+    
+    .banner-img-container-mobile{
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+    }
+
+    @media screen and (max-width: 1200px){
+        .new-course-section{
+            padding-block: 60px;
+            padding: 15px;
+        }
+        .banner-content{
+            margin-top: 10dvh;
+        }
+        .banner-logo-img{
+            width: 140px
+        }
+
+    }
+    @media screen and (max-width: 978px){
+        .banner-blur-container img {
+            display: none;
+        }
+        .banner-content .banner-content-title{
+            font-size: 40px;
+        }
+        .banner-content .banner-content-date{
+            font-size: var(--font-xl);
+        }
+        .banner-content .banner-cta-btn{
+            font-size: var(--font-l);
+            width: 150px;
+            padding: 15px;
+
+        }
+    }
+    @media screen and (max-width: 768px){
+        .new-course-section{
+            background-color: var(--orange);
+            display: flex;
+            align-items: center;
+        }
+       
+        .course-banner-wrapper{
+            border-radius: 0;
+             max-width: none; /* Veya örneğin: 100% */
+            width: 100%;
+        }
+        .banner-chip{
+            position: unset;
+        }
+        .banner-logo-container{
+            display: none;
+        }
+        .banner-img-container .course-banner-img{
+            display: none;
+        }
+        .banner-img-container-mobile {
+            display: block;
+        }
+        .banner-img-container-mobile  img{
+            width: 100%;
+        }
+         .banner-content-container{
+            padding: 5px;
+            width: 100%;
+            max-width: unset;
+        }
+        .banner-content{
+            margin-top: 5px;
+        }
+        .banner-content .banner-cta-btn{
+            width: 100%;
+            margin-block-start: 24px;
+        }
+        }
+        @media screen and (max-width: 590px) {
+            .banner-content .banner-content-title{
+                font-size: var( --font-subheading);
+            }
+        }
+       
+    @media screen and (max-width: 520px) {
+        .new-course-section{
+            padding-block: 20px;
+        }
+        .banner-content .banner-content-title{
+            font-size: var(--font-xxl);
+            line-height: unset;
+        }
+    }
+
+    /*New Course Section End*/
+
      /*Coaching Benefits Section Start*/
      .coaching-benefits-section{
         padding: 120px 20px;
@@ -1908,6 +2139,7 @@ opacity: 0.8;
     }
 
     /*Coaching Benefits Section End*/
+
       /*Testimonials Section Start*/
       .testimonials-section{
         padding: 70px 20px;
@@ -2000,6 +2232,10 @@ opacity: 0.8;
         width: 54px;
         height: 54px;
         border-radius: 50px;
+    }
+    .testimonial-btn:hover{
+        cursor:pointer;
+        transform: scale(0.95);
     }
     @media screen and (max-width: 1440px) {
         .testimonials-section .testimonial-img-container{
@@ -2102,7 +2338,8 @@ opacity: 0.8;
         }
     }
      /*Testimonials Section End*/
-       /*Strategies Section Start*/
+
+      /*Strategies Section Start*/
  .strategies-section{
     width: 100%;
     background-color: #EAEAEA;
@@ -2257,6 +2494,7 @@ opacity: 0.8;
 
 /*Strategies Section End*/
    
+
        /*News Section Start*/
        .news-section{
         padding: 120px 50px;
@@ -2363,9 +2601,14 @@ opacity: 0.8;
         font-weight: var(--thick);
         width: 430px;
      }
+
      .news-card-right-arrow{
         margin-top: 25px;
+     }
+
+     .news-card-right-arrow:hover{
         cursor: pointer;
+        transform: scale(0.95);
      }
 
      @media screen and (max-width: 1710px){
@@ -2414,13 +2657,15 @@ opacity: 0.8;
         .news-section{
             padding: 100px 10px 100px 100px;
         }
-       
+
+       .news-content-container{
+        gap: 25px;
+       }
     }
        
       @media screen and (max-width: 1175px){
         .news-content-container{
         justify-content: unset;
-        gap: 100px;
         }
         .news-card-text .news-card-title-info{
             font-size: var(--font-xxl);
@@ -2470,7 +2715,7 @@ opacity: 0.8;
     }
     @media screen and (max-width: 520px){
         .news-title{
-            font-size: var(--font-xl);
+            font-size: var(--font-xxl);
         }
         .card-img-container{
             width: unset;
@@ -2659,6 +2904,7 @@ opacity: 0.8;
  
 
  /*Event Schedule Section End*/
+ 
   /*Newsletter Section Start*/
   .newsletter-section{
     display: flex;
@@ -2932,6 +3178,7 @@ opacity: 0.8;
 
 }
 /*Newsletter Section End*/
+
  /*Footer Section Start*/
 
  .footer-section{
@@ -3061,6 +3308,7 @@ opacity: 0.8;
         }
     }
 /*Footer Section End*/
+
 
 
 
